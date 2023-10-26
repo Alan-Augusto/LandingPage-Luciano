@@ -1,0 +1,11 @@
+.section {
+  color: var(--primary);
+  text-align: center;
+  font-size: 32px;
+  text-transform: uppercase;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blueviolet;
+}

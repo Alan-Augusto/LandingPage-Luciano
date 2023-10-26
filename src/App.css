@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: montserrat;
+  background-color: var(--secundary);
+}
+
+:root{
+  --secundary: #131313;
+  --tertiary: #c9b500;
+  --primary: #dfdfdf;
+  --box-shadow: 0 0 1.5rem rgba(0 0 0 / 0.1);
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+}

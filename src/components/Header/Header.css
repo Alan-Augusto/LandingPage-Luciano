@@ -1,0 +1,56 @@
+.Header{
+  border: 1px solid greenyellow;
+  height: 3.5rem;
+}
+
+.Header ul {
+  list-style: none;
+}
+
+.Header a {
+  text-decoration: none;
+  color: var(--tertiary);
+  transition: color 0.3s ease-in-out;
+}
+
+
+.Header a:hover, a.active {
+  color: var(--primary);
+}
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+}
+
+.container {
+  max-width: 1170px;
+  padding: 16px;
+  margin-inline: auto;
+}
+
+
+.logo {
+  font-size: 20px;
+  color: var(--primary);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.menu-bar li a {
+  text-transform: capitalize;
+  font-size: 16px;
+}
