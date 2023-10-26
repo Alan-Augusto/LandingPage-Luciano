@@ -1,0 +1,68 @@
+#hero-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#hero img{
+    height: 80vh;
+}
+
+#hero-actions{
+    min-width: 35%;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+    text-align: left;
+    background-color: transparent;
+}
+
+#hero button{
+    color: rgb(34, 34, 34);
+    background-color: rgba(219, 219, 0, 0.89);
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 4px 12px;
+}
+
+#hero-actions h1{
+    font-size: 2.5rem;
+    font-weight: 5000;
+    background-color: transparent;
+}
+#hero-actions p{
+    font-size: 1rem;
+    font-weight: 100;
+    background-color: transparent;
+}
+
+
+@media (max-width: 960px) {
+    #hero-container{
+        justify-content: left;
+    }
+    #hero {
+        background-image: url('./assets/hero.png');
+        background-size: cover;
+        
+        
+    }
+    #hero img {
+        display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
+    }
+    #hero-actions{
+        max-width: 80%;
+        backdrop-filter: blur(10px);
+        padding: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1.);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        border-radius: 8px;
+    }
+}
