@@ -3,13 +3,14 @@
   margin: 0px;
   padding: 0px;
   font-family: montserrat;
-  background-color: var(--secundary);
 }
 
 :root{
-  --secundary: #171717;
-  --tertiary: #c9b500;
-  --primary: #dfdfdf;
+  --primary: #ffffff;
+  --secundary: #000000;
+  --tertiary: #f9e745;
+  --quaternary:#e1347f;
+  --quinary: #46C8E0;
   --box-shadow: 0 0 1.5rem rgba(0 0 0 / 0.1);
 }
 

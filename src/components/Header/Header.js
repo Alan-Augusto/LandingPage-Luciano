@@ -57,7 +57,7 @@ function Header() {
         <div className='container'>
           <div className='row'>
             <div className='logo'>
-              LGL - Advocacia Trabalhista
+              <p>LGL - Advocacia Trabalhista</p>
             </div>
 
             <ul className='menu-bar'>

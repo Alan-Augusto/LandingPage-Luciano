@@ -1,5 +1,5 @@
 .section {
-  color: var(--primary);
+  color: var(--secundary);
   text-align: center;
   font-size: 32px;
   text-transform: uppercase;
@@ -7,6 +7,5 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blueviolet;
-  background-color: transparent;
+  background-color: var(--primary);
 }
