@@ -1,8 +1,8 @@
-import "./Section.css";
+import "../Section.css";
 import "./Hero.css";
 import React from "react";
 import HeroIMmage from "./assets/hero.png"
-import Button from "../Button/Button";
+import Button from "../../Button/Button";
 
 function Hero() {
   return (

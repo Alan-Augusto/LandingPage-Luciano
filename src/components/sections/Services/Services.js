@@ -1,4 +1,4 @@
-import "./Section.css";
+import "../Section.css";
 import "./Services.css";
 import React from "react";
 

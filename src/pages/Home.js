@@ -1,7 +1,7 @@
 import React from "react"
-import Hero from "../components/sections/Hero"
-import Services from "../components/sections/Services"
-import Contacts from "../components/sections/Contacts"
+import Hero from "../components/Sections/Hero/Hero"
+import Services from "../components/Sections/Services/Services"
+import Contacts from "../components/Sections/Contacts/Contacts"
 
 function Home(){
     return(
