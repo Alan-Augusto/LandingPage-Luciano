@@ -5,3 +5,22 @@
     border-radius: 20px;
     padding: 4px 12px;
 }
+
+.Button:hover {
+    animation: scale 1s ease-in-out;
+}
+  
+
+@keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+      box-shadow: var(--box-shadow);
+    }
+    100% {
+        transform: scale(1);
+      }
+  }
+  

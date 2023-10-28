@@ -59,3 +59,26 @@ nav{
   text-transform: capitalize;
   font-size: 16px;
 }
+
+.mobile-menu-bar{
+  display: none;
+  
+}
+
+.mobile-menu-bar select{
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--quaternary);
+}
+
+@media (max-width: 960px) {
+  .mobile-menu-bar {
+    display: flex;
+  }
+  .menu-bar{
+    display: none;
+  }
+}
