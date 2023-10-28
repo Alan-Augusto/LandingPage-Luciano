@@ -19,7 +19,7 @@ function Hero() {
         </div>
 
         <div id="hero-image">
-          <img src={HeroIMmage} />
+          <img src={HeroIMmage} alt="Luciano Leite" />
         </div>
       </div>
     </section>
