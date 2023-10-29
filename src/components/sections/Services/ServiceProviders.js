@@ -1,8 +1,22 @@
-import { MdElderlyWoman } from 'react-icons/md';
+import { MdElderlyWoman, MdOutlineMoneyOffCsred } from 'react-icons/md';
+import { AiOutlineUserDelete, AiOutlineAlert } from 'react-icons/ai';
+import { VscWorkspaceTrusted } from 'react-icons/vsc';
+import { BsBookmarkStar } from 'react-icons/bs'
 const sizeIcons = '2em';
-const colorIcons="var(--secundary)"
+const colorIcons="var(--tertiary)"
 const colorCard="var(--secundary-2)"
 const colorText="var(--secundary)"
+
+/*
+  --primary: #ffffff;
+  --secundary: #000000;
+  --secundary-2: #4a4a4a20;
+  --tertiary: #f9e745;
+  --quaternary:#e1347f;
+  --quinary: #46C8E0;
+  --box-shadow: 0 0 1.5rem rgba(0 0 0 / 0.1);
+*/
+
 
 const services = [
     {
@@ -12,7 +26,7 @@ const services = [
             "Anulação de Justa Causa",
             "Rescisão Indireta e Pedido de Demissão"
         ],
-        icon: <MdElderlyWoman size={sizeIcons}/>,
+        icon: <AiOutlineUserDelete size={sizeIcons}/>,
         linkTo:"",
         colorIcon: colorIcons,
         colorCard: colorCard,
@@ -25,7 +39,7 @@ const services = [
             "Adicional Noturno",
             "Salário e Comissões"
         ],
-        icon: <MdElderlyWoman size={sizeIcons}/>,
+        icon: <MdOutlineMoneyOffCsred size={sizeIcons}/>,
         linkTo:"",
         colorIcon: colorIcons,
         colorCard: colorCard,
@@ -40,7 +54,7 @@ const services = [
             "Dano Existencial",
             "Discriminação"
         ],
-        icon: <MdElderlyWoman size={sizeIcons}/>,
+        icon: <AiOutlineAlert size={sizeIcons}/>,
         linkTo:"",
         colorIcon: colorIcons,
         colorCard: colorCard,
@@ -55,7 +69,7 @@ const services = [
             "Insalubridade e Acidente de Trabalho",
             "Doença Ocupacional"
         ],
-        icon: <MdElderlyWoman size={sizeIcons}/>,
+        icon: <VscWorkspaceTrusted size={sizeIcons}/>,
         linkTo:"",
         colorIcon: colorIcons,
         colorCard: colorCard,
@@ -67,7 +81,7 @@ const services = [
             "Cuidadora de Idosos",
             "Empregada Doméstica"
         ],
-        icon: <MdElderlyWoman size={sizeIcons}/>,
+        icon: <BsBookmarkStar size={sizeIcons}/>,
         linkTo:"",
         colorIcon: colorIcons,
         colorCard: colorCard,
