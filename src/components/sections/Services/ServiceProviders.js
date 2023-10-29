@@ -4,8 +4,9 @@ import { VscWorkspaceTrusted } from 'react-icons/vsc';
 import { BsBookmarkStar } from 'react-icons/bs'
 const sizeIcons = '2em';
 const colorIcons="var(--tertiary)"
-const colorCard="var(--secundary-2)"
+const colorCard="var(--primary)"
 const colorText="var(--secundary)"
+const colorTextMark="var(--secundary-2)"
 
 /*
   --primary: #ffffff;
@@ -26,9 +27,9 @@ const services = [
             "Anulação de Justa Causa",
             "Rescisão Indireta e Pedido de Demissão"
         ],
-        icon: <AiOutlineUserDelete size={sizeIcons}/>,
+        icon: <AiOutlineUserDelete size={sizeIcons} color={colorIcons}/>,
         linkTo:"",
-        colorIcon: colorIcons,
+        colorTextMark: colorTextMark,
         colorCard: colorCard,
         colorText: colorText
     },
@@ -39,9 +40,9 @@ const services = [
             "Adicional Noturno",
             "Salário e Comissões"
         ],
-        icon: <MdOutlineMoneyOffCsred size={sizeIcons}/>,
+        icon: <MdOutlineMoneyOffCsred size={sizeIcons} color={colorIcons}/>,
         linkTo:"",
-        colorIcon: colorIcons,
+        colorTextMark: colorTextMark,
         colorCard: colorCard,
         colorText: colorText
     },
@@ -54,9 +55,9 @@ const services = [
             "Dano Existencial",
             "Discriminação"
         ],
-        icon: <AiOutlineAlert size={sizeIcons}/>,
+        icon: <AiOutlineAlert size={sizeIcons} color={colorIcons}/>,
         linkTo:"",
-        colorIcon: colorIcons,
+        colorTextMark: colorTextMark,
         colorCard: colorCard,
         colorText: colorText
     },
@@ -69,9 +70,9 @@ const services = [
             "Insalubridade e Acidente de Trabalho",
             "Doença Ocupacional"
         ],
-        icon: <VscWorkspaceTrusted size={sizeIcons}/>,
+        icon: <VscWorkspaceTrusted size={sizeIcons} color={colorIcons}/>,
         linkTo:"",
-        colorIcon: colorIcons,
+        colorTextMark: colorTextMark,
         colorCard: colorCard,
         colorText: colorText
     },
@@ -81,9 +82,9 @@ const services = [
             "Cuidadora de Idosos",
             "Empregada Doméstica"
         ],
-        icon: <BsBookmarkStar size={sizeIcons}/>,
+        icon: <BsBookmarkStar size={sizeIcons} color={colorIcons}/>,
         linkTo:"",
-        colorIcon: colorIcons,
+        colorTextMark: colorTextMark,
         colorCard: colorCard,
         colorText: colorText
     },

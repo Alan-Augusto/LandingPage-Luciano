@@ -15,9 +15,10 @@ function Services(){
                             key={i}
                             title={service.title}
                             icon={service.icon}
-                            color={service.colorCard}
                             description={service.description}
+                            colorCard={service.colorCard}
                             colorText={service.colorText}
+                            colorTextMark={service.colorTextMark}
                         />
                     ))
                 }
