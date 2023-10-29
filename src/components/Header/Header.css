@@ -1,6 +1,7 @@
 .Header{
   height: 3.5rem;
   background-color: var(--primary);
+  z-index: 1;
 }
 
 .Header ul {

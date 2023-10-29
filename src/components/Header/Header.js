@@ -13,9 +13,9 @@ function Header() {
     if (element) {
       const marginTop = 0;
       const scrollToY = element.getBoundingClientRect().top + window.scrollY - marginTop;
-      window.scrollTo({ top: scrollToY, behavior: "smooth" });
+      window.scrollTo({ top: scrollToY, behavior: 'smooth' });
     }
-  }
+  };
 
   const determineActiveSection = () => {
     for (let i = sectionIds.length - 1; i >= 0; i--) {

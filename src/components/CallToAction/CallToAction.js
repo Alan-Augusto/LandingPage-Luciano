@@ -3,7 +3,7 @@ import "./CallToAction.css";
 import React from "react";
 
 
-function CallToAction({title, desription, position}) {
+function CallToAction({title, desription, position, model}) {
     let style = {}
     if(position == "right"){
         style = {
@@ -19,9 +19,9 @@ function CallToAction({title, desription, position}) {
     }
 
   return (
-    <div className="CallToAction" style={style}>
-        <h1>{title}</h1>
-        <p>{desription}</p>
+    <div className="CallToAction" id={(model=='2')?'CallToAction2' : 'CallToAction'} style={style}>
+        {title && (<h1>{title}</h1>)}
+        {desription && (<p>{desription}</p>)}
         <Button
             title="Falar com Dr. Luciano"
             color="var(--tertiary)"

@@ -22,11 +22,22 @@
 
 @media (max-width: 960px) {
     .CallToAction{
+        border-radius: 8px;
+        align-items: center !important;
+        text-align: center !important;
         max-width: 80%;
         padding: 16px;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(15px);
         border: 1px solid rgba(255, 255, 255, 0.1.);
         box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-        border-radius: 8px;
+    }
+    #CallToAction p{
+        color: var(--primary);
+    }
+
+    #CallToAction2{
+        backdrop-filter: none;
+        box-shadow: none;
+        padding: 0;
     }
 }

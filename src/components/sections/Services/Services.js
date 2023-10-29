@@ -8,6 +8,9 @@ import CallToAction from "../../CallToAction/CallToAction";
 function Services(){
     return(
         <section className="section" id="services">
+            <div id='services-new-action'>
+                <CallToAction model="2"/>
+            </div>
             <div className='cards-main'>
                 {
                     services.map((service, i)=>(
@@ -28,6 +31,7 @@ function Services(){
                 title="Minhas principais experiências te atendem?"
                 desription="Faço Orientações Jurídicas em situações relacionadas à defesa de empregados na Justiça do Trabalho"
                 position="right"
+                model="2"
             />
         </section>
     )

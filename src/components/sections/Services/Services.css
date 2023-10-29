@@ -1,5 +1,5 @@
 #services{
-    padding: 1em;
+    padding: 1em 2em;
     display: flex;
     flex-direction: row;
 }
@@ -9,4 +9,25 @@
     flex-direction: row;
     gap: 16px;
     flex-wrap: wrap;
+}
+
+#services-new-action{
+    display: none;
+}
+
+@media (max-width: 960px) {
+    #services{
+        flex-direction: column-reverse;
+        gap: 32px;
+        padding-top: 2em;
+    }
+    .cards-main{
+        width: 90%;
+        justify-content: center;
+    }
+    #services-new-action{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 }

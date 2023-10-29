@@ -16,23 +16,14 @@
 
 @media (max-width: 960px) {
     #hero-container{
-        justify-content: left;
+        justify-content: center;
+        gap: 0;
     }
     #hero {
         background-image: url('./assets/hero.png');
-        background-size: cover;
-        
-        
+        background-size: cover;   
     }
     #hero img {
         display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
-    }
-    #hero-actions{
-        max-width: 80%;
-        padding: 16px;
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1.);
-        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-        border-radius: 8px;
     }
 }
