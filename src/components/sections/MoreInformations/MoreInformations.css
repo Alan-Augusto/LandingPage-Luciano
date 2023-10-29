@@ -1,0 +1,30 @@
+#doubts-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#doubts img{
+    height: 70vh;
+}
+
+
+
+
+@media (max-width: 960px) {
+    #doubts-container{
+        justify-content: center;
+        gap: 0;
+    }
+    #doubts {
+        background-image: url('./assets/duvida.png');
+        background-size: cover;
+        background-position: center;  
+    }
+    #doubts img {
+        display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
+    }
+}

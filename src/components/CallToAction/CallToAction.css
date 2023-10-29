@@ -34,10 +34,13 @@
     #CallToAction p{
         color: var(--primary);
     }
-
+    
     #CallToAction2{
         backdrop-filter: none;
         box-shadow: none;
         padding: 0;
+    }
+    #CallToAction3 p{
+        color: var(--secondary);
     }
 }

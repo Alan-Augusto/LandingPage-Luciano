@@ -19,7 +19,7 @@ function CallToAction({title, desription, position, model}) {
     }
 
   return (
-    <div className="CallToAction" id={(model=='2')?'CallToAction2' : 'CallToAction'} style={style}>
+    <div className="CallToAction" id={(model=='2')?'CallToAction2' : ((model=='3')? 'CallToAction3':'CallToAction')} style={style}>
         {title && (<h1>{title}</h1>)}
         {desription && (<p>{desription}</p>)}
         <Button
