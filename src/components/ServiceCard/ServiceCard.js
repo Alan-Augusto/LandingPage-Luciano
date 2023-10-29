@@ -12,7 +12,14 @@ function ServiceCard({title, icon, description, linTo, color, colorText}){
         <div className="ServiceCard" style={style} onClick={Navigate("/"+linTo)}>
             <i className="Card-Icon">{icon}</i>
             <h3>{title}</h3>
-            <p>{description}</p>
+            <ul>
+                {
+                    description.map((text, i) =>(
+                        <li key={i}> {text}
+                        </li>
+                    ))
+                }                
+            </ul>
         </div>
     )
 }

@@ -1,0 +1,12 @@
+#services{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+.cards-main{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}

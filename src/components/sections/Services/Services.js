@@ -1,8 +1,9 @@
-import { services } from './ServiceContext'
+import { services } from './ServiceProviders'
 import ServiceCard from "../../ServiceCard/ServiceCard";
 import "../Section.css";
 import "./Services.css";
 import React from "react";
+import CallToAction from "../../CallToAction/CallToAction";
 
 function Services(){
     return(
@@ -15,11 +16,18 @@ function Services(){
                             title={service.title}
                             icon={service.icon}
                             color={service.colorCard}
+                            description={service.description}
                             colorText={service.colorText}
                         />
                     ))
                 }
+
             </div>
+            <CallToAction
+                title="Minhas principais experiências te atendem?"
+                desription="Faço Orientações Jurídicas em situações relacionadas à defesa de empregados na Justiça do Trabalho"
+                position="right"
+            />
         </section>
     )
 }
