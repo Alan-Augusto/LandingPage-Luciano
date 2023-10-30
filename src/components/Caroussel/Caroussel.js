@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Carousel.css";
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md"
 
 function Carousel({ items, itemsPerPage, showTitle, showDescription, showImage }) {
   const [currentPage, setCurrentPage] = useState(0);
@@ -24,7 +25,10 @@ function Carousel({ items, itemsPerPage, showTitle, showDescription, showImage }
 
   return (
     <div className="Carousel">
-      <button onClick={handlePrevPage}>Voltar</button>
+      <MdKeyboardArrowLeft 
+        onClick={handlePrevPage} 
+        className="button-page"
+      />
       <div className="carousel-container">
         {displayedItems.map((item, i) => (
           <div className="card-item" id={"card-item" + i} key={i}>
@@ -55,7 +59,10 @@ function Carousel({ items, itemsPerPage, showTitle, showDescription, showImage }
           </div>
         ))}
       </div>
-      <button onClick={handleNextPage}>Passar</button>
+      <MdKeyboardArrowRight 
+        onClick={handleNextPage} 
+        className="button-page"
+      />
     </div>
   );
 }
