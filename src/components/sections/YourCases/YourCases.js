@@ -11,9 +11,10 @@ function YourCases(){
             {/*<CarouselItem/>*/}
             <Carousel
                 items={cases}
-                itemsPerPage={5}
+                itemsPerPage={4}
                 showDescription={true}
                 showTitle={true}
+                showImage={true}
             />
         </section>
     )

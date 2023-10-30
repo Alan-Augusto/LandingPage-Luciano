@@ -1,33 +1,43 @@
 const cases = [
     {
-        title: "AAAAA",
+        title: "Rescisão e Contrato de Trabalho",
         description: "aa",
-        image: ""
+        image: "laura.jpg"
     },
     {
-        title: "BBBBB",
+        title: "Horas e Remuneração",
         description: "bb",
-        image: ""
+        image: "laura.jpg"
     },
     {
-        title: "CCCCC",
+        title: "Danos e Discriminação",
         description: "cc",
-        image: ""
+        image: "laura.jpg"
     },
     {
-        title: "DDDDD",
+        title: "Funções",
         description: "dd",
-        image: ""
+        image: "laura.jpg"
     },
     {
-        title: "EEEEE",
+        title: "Condições de Trabalho",
         description: "ee",
-        image: ""
+        image: "laura.jpg"
     },
     {
-        title: "FFFFF",
+        title: "Serviços Especiais",
         description: "ff",
-        image: ""
+        image: "laura.jpg"
+    },
+    {
+        title: "Vínculo de Emprego",
+        description: "gg",
+        image: "laura.jpg"
+    },
+    {
+        title: "Salário por Fora",
+        description: "gg",
+        image: "laura.jpg"
     },
 ];
 
