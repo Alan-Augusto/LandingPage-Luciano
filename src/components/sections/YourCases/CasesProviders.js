@@ -36,7 +36,12 @@ const cases = [
     },
     {
         title: "Salário por Fora",
-        description: "gg",
+        description: "hh",
+        image: "laura.jpg"
+    },
+    {
+        title: "TESTE",
+        description: "ii",
         image: "laura.jpg"
     },
 ];
