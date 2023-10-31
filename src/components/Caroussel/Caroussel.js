@@ -4,17 +4,30 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md"
 
 function Carousel({ items, itemsPerPage, showTitle, showDescription, showImage }) {
   const [currentPage, setCurrentPage] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
 
   const totalItems = items.length;
 
-  const handlePrevPage = () => {
-    setCurrentPage((prevPage) => Math.max(0, prevPage - 1));
-  };
-
   const handleNextPage = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setIsTransitioning(false);
+    }, 300); // 300ms é a duração da transição
+    
     setCurrentPage((prevPage) => Math.min(totalItems - itemsPerPage, prevPage + 1));
+  
   };
-
+  
+  const handlePrevPage = () => {
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setIsTransitioning(false);
+    }, 300); // 300ms é a duração da transição
+    setCurrentPage((prevPage) => Math.max(0, prevPage - 1));
+  
+  };
+  
   const startItem = currentPage;
   const endItem = startItem + itemsPerPage;
   const displayedItems = items.slice(startItem, endItem);
@@ -31,7 +44,7 @@ function Carousel({ items, itemsPerPage, showTitle, showDescription, showImage }
       />
       <div className="carousel-container">
         {displayedItems.map((item, i) => (
-          <div className="card-item" id={"card-item" + i} key={i}>
+          <div className={`${isTransitioning ? "card-transition" : "card-item "}`} id={"card-item" + i} key={i}>
             {showImage && (
               <div className="card-image">
                 <img src={require(`../Sections/YourCases/assets/${item.image}`)} alt={item.title} />
