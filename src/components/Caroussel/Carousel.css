@@ -20,11 +20,6 @@
     overflow: hidden;
 }
 
-.carousel-container.slide-transition {
-    transition: transform 0.3s ease;
-  }
-  
-
 .card-item{
     display: flex;
     flex-direction: column;
@@ -76,7 +71,7 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6);
     transition: transform 0.5s ease;
-    transform: translateX(-100%);
+    transform: translateX(-105%);
   }
 
   .card-transition-left {
@@ -91,37 +86,16 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6);
     transition: transform 0.5s ease;
-    transform: translateX(100%);
-    
+    transform: translateX(105%);
   }
-
-  .card-transition-right .card-text h3, p{
-    animation: esmaecer 0.5s ease-in-out;
-  }
-
-  @keyframes esmaecer {
-    0% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0;
-    }
-    75%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .card-text h3{
     font-size: 16px;
     font-weight: 600;
 }
-
 .card-text p{
-    font-size: 12px;
-    font-weight: 200;
+    font-size: 14px;
+    font-weight: 300;
     text-transform: lowercase;
     text-align: center;
 }
@@ -174,12 +148,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 1.5em;
+        padding: .5em;
         width: 100%;
+        height: 100%;
         gap: 16px;
         overflow: hidden;
     }
-    .mobile-carousel-container.slide-transition {
-        transition: transform 0.3s ease;
-      }
+    .card-transition-left {
+      transform: translateX(108%);
+    }
+    .card-transition-right {
+      transform: translateX(-108%);
+    }
   }
