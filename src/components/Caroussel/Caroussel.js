@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Carousel.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import CarouselItemIndicator from "./CarouselItemIndicator/CarouselItemIndicator";
 
 function Carousel({
   items,
@@ -8,6 +9,7 @@ function Carousel({
   showTitle,
   showDescription,
   showImage,
+  colorIndicator
 }) {
   const [transitionType, setTransitionType] = useState("");
   const totalItems = items.length;
@@ -101,48 +103,77 @@ function Carousel({
   return (
     <div className="Carousel">
       <MdKeyboardArrowLeft onClick={handlePrevPage} className="button-page" />
-      <div className="carousel-container">
-        {displayedItems.map((item, i) => (
-          <div
-            className={`${isTransitioning? "card-transition-" + transitionType: `${i === isNewCard ? "new-card-item" : "card-item"}`}`}
-            id={"card-item" + i}
-            key={i}
-          >
-            {showImage && (
-              <div className="card-image">
-                <img src={require(`../Sections/YourCases/assets/${item.image}`)} alt={item.title} />
-              </div>
-            )}
-            <div className="card-text">
-              {showTitle && <h3>{item.title}</h3>}
-              {showDescription && <p>{item.description}</p>}
-            </div>
-          </div>
-        ))}
-      </div>
+      <div className="carousel-general">
 
-      <div className="mobile-carousel-container">
-        {displayedItemsMobile.map((item, i) => (
-          <div
-            className={`${
-              isTransitioningMobile
-                ? "card-transition-" + transitionType
-                : `${i === isNewCardMobile ? "new-card-item" : "card-item"}`
-            }`}
-            id={"card-item" + i}
-            key={i}
-          >
-            {showImage && (
-              <div className="card-image">
-                <img src={require(`../Sections/YourCases/assets/${item.image}`)} alt={item.title} />
+        <div className="carousel-container">
+          {displayedItems.map((item, i) => (
+            <div
+              className={`${
+                isTransitioning
+                  ? "card-transition-" + transitionType
+                  : `${i === isNewCard ? "new-card-item" : "card-item"}`
+              }`}
+              id={"card-item" + i}
+              key={i}
+            >
+              {showImage && (
+                <div className="card-image">
+                  <img
+                    src={require(`../Sections/YourCases/assets/${item.image}`)}
+                    alt={item.title}
+                  />
+                </div>
+              )}
+              <div className="card-text">
+                {showTitle && <h3>{item.title}</h3>}
+                {showDescription && <p>{item.description}</p>}
               </div>
-            )}
-            <div className="card-text">
-              {showTitle && <h3>{item.title}</h3>}
-              {showDescription && <p>{item.description}</p>}
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="carousel-indicator">
+          <CarouselItemIndicator
+            numPages={totalItems - itemsPerPage + 1}
+            currentPage={counter}
+            colorItems={colorIndicator}
+            heightItems={"12px"}
+          />
+        </div>
+
+        <div className="mobile-carousel-container">
+          {displayedItemsMobile.map((item, i) => (
+            <div
+              className={`${
+                isTransitioningMobile
+                  ? "card-transition-" + transitionType
+                  : `${i === isNewCardMobile ? "new-card-item" : "card-item"}`
+              }`}
+              id={"card-item" + i}
+              key={i}
+            >
+              {showImage && (
+                <div className="card-image">
+                  <img
+                    src={require(`../Sections/YourCases/assets/${item.image}`)}
+                    alt={item.title}
+                  />
+                </div>
+              )}
+              <div className="card-text">
+                {showTitle && <h3>{item.title}</h3>}
+                {showDescription && <p>{item.description}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="carousel-mobile-indicator">
+          <CarouselItemIndicator
+            numPages={totalItems - 1}
+            currentPage={counterMobile}
+            colorItems={colorIndicator}
+            heightItems={"12px"}
+          />
+        </div>
       </div>
       <MdKeyboardArrowRight onClick={handleNextPage} className="button-page" />
     </div>

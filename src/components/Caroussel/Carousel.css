@@ -20,6 +20,20 @@
     overflow: hidden;
 }
 
+.carousel-general{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+
+.carousel-mobile-indicator{
+  display: none;
+}
+
 .card-item{
     display: flex;
     flex-direction: column;
@@ -153,6 +167,12 @@
         height: 100%;
         gap: 16px;
         overflow: hidden;
+    }
+    .carousel-mobile-indicator{
+      display: flex;
+    }
+    .carousel-indicator{
+      display: none;
     }
     .card-transition-left {
       transform: translateX(108%);

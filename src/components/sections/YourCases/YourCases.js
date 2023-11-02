@@ -8,13 +8,13 @@ import {cases} from "./CasesProviders"
 function YourCases(){
     return(
         <section className="section" id="your-cases">
-            {/*<CarouselItem/>*/}
             <Carousel
                 items={cases}
                 itemsPerPage={4}
                 showDescription={true}
                 showTitle={true}
                 showImage={true}
+                colorIndicator={"var(--tertiary)"}
             />
         </section>
     )
