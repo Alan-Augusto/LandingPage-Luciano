@@ -7,7 +7,7 @@
     background-color: transparent;
 }
 
-#hero img{
+#Apresentacao img{
     height: 70vh;
 }
 
@@ -19,11 +19,11 @@
         justify-content: center;
         gap: 0;
     }
-    #hero {
+    #Apresentacao {
         background-image: url('./assets/hero.png');
         background-size: cover;   
     }
-    #hero img {
+    #Apresentacao img {
         display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
     }
 }

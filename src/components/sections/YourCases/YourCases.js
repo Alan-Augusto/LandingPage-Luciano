@@ -7,7 +7,7 @@ import {cases} from "./CasesProviders"
 
 function YourCases(){
     return(
-        <section className="section" id="your-cases">
+        <section className="section" id="Casos">
             <div className="Title">
                 <CallToAction
                     title="Dê uma olhada nos principais serviços!"

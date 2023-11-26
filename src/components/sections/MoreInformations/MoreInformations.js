@@ -6,7 +6,7 @@ import React from "react";
 
 function MoreInformations(){
     return(
-        <section className="section" id="doubts">
+        <section className="section" id="Dúvidas">
             <div id="doubts-container">
                 <div id="doubts-image">
                     <img src={HeroIMmage} alt="Luciano Leite" />

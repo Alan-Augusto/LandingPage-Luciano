@@ -7,7 +7,7 @@
     background-color: transparent;
 }
 
-#doubts img{
+#Dúvidas img{
     height: 70vh;
 }
 
@@ -19,12 +19,12 @@
         justify-content: center;
         gap: 0;
     }
-    #doubts {
+    #Dúvidas {
         background-image: url('./assets/duvida.png');
         background-size: cover;
         background-position: center;  
     }
-    #doubts img {
+    #Dúvidas img {
         display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
     }
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 function Contacts(){
     return(
-        <section className="section" id="contacts">
+        <section className="section" id="Contatos">
             Contatos
         </section>
     )

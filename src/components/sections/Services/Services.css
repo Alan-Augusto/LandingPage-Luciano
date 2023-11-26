@@ -1,4 +1,4 @@
-#services{
+#Serviços{
     padding: 1em 2em;
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
 }
 
 @media (max-width: 960px) {
-    #services{
+    #Serviços{
         flex-direction: column-reverse;
         gap: 32px;
         padding-top: 2em;

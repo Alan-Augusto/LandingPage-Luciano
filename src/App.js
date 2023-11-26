@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
 
-  const [activeLink, setActiveLink] = useState("hero");
+  const [activeLink, setActiveLink] = useState("apresentacao");
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
