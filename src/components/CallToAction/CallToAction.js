@@ -3,7 +3,7 @@ import "./CallToAction.css";
 import React from "react";
 
 
-function CallToAction({title, desription, position, model}) {
+function CallToAction({title, desription, position, model, width}) {
     let style = {}
     if(position == "right"){
         style = {
@@ -16,6 +16,19 @@ function CallToAction({title, desription, position, model}) {
             alignItems: 'flex-start',
             textAlign: 'left',
         }
+    }
+    if(position == "center"){
+        style = {
+            alignItems: 'center',
+            textAlign: 'center',
+            justifyContent: 'center',
+        }
+    }
+    if (width) {
+        style = {
+            ...style,
+            maxWidth: width
+        };
     }
 
   return (
