@@ -16,6 +16,7 @@ function MoreInformations(){
                 desription="Estou aqui para estudar e analisar seu caso da melhor forma possível"
                 position="right"
                 model="3"
+                button={true}
                 />
             </div>
         </section>

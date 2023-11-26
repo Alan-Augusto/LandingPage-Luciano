@@ -3,7 +3,7 @@ import "./CallToAction.css";
 import React from "react";
 
 
-function CallToAction({title, desription, position, model, width}) {
+function CallToAction({title, desription, position, model, width, button}) {
     let style = {}
     if(position === "right"){
         style = {
@@ -35,11 +35,11 @@ function CallToAction({title, desription, position, model, width}) {
     <div className="CallToAction" id={(model==='2')?'CallToAction2' : ((model==='3')? 'CallToAction3':'CallToAction')} style={style}>
         {title && (<h1>{title}</h1>)}
         {desription && (<p>{desription}</p>)}
-        <Button
+        {button && <Button
             title="Falar com Dr. Luciano"
             color="var(--tertiary)"
             textColor="var(--secundary)"
-        />
+        />}
     </div>
   );
 }

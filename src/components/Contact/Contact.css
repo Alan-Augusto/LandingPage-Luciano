@@ -1,0 +1,37 @@
+.Contact{
+    border-radius: .2em;
+    padding: .5em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: .4em;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+}
+.Contact:hover{
+    animation: scale .8s ease-in-out;
+}
+
+.Contact i {
+    display: flex;
+}
+
+.Contact-Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.Contact-Title{
+    font-size: .8em;
+}
+
+.Contact-Value{
+    font-size: .7em;
+    text-transform: lowercase;
+}

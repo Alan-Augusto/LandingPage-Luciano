@@ -15,6 +15,7 @@ function YourCases(){
                     position="center"
                     model="3"
                     width="60%"
+                    button={false}
                 />
             </div>
             <div className="Cases">

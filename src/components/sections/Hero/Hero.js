@@ -12,6 +12,7 @@ function Hero() {
           title="Defesa Trabalhista Exclusiva Para Empregados"
           desription="cada cliente é único e seu caso é nosso compromisso"
           position="left"
+          button={true}
         />
         <div id="hero-image">
           <img src={HeroIMmage} alt="Luciano Leite" />

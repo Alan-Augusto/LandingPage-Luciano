@@ -32,6 +32,7 @@ function Services(){
                 desription="Faço Orientações Jurídicas em situações relacionadas à defesa de empregados na Justiça do Trabalho"
                 position="right"
                 model="2"
+                button={true}
             />
         </section>
     )
