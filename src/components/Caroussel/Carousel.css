@@ -109,9 +109,10 @@
 }
 .card-text p{
     font-size: 14px;
-    font-weight: 300;
-    text-transform: lowercase;
-    text-align: center;
+    font-weight: 400;
+    text-transform: none;
+    text-align: left;
+    margin: 4px;
 }
 
 .card-image {
@@ -180,4 +181,7 @@
     .card-transition-right {
       transform: translateX(-108%);
     }
+    .card-text p{
+      font-size: 12px;
+  }
   }

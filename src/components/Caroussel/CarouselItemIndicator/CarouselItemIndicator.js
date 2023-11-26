@@ -33,7 +33,7 @@ function CarouselItemIndicator({
           key={page}
           className={i === currentPage ? "special-item" : "commom-item"}
           style={i === currentPage ? specialItemStyle : itemStyle}
-        ></div>
+        />
       ))}
     </div>
   );
