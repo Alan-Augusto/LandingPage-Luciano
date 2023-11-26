@@ -5,19 +5,19 @@ import React from "react";
 
 function CallToAction({title, desription, position, model, width}) {
     let style = {}
-    if(position == "right"){
+    if(position === "right"){
         style = {
             alignItems: 'flex-end',
             textAlign: 'right',
         }
     }
-    if(position == "left"){
+    if(position === "left"){
         style = {
             alignItems: 'flex-start',
             textAlign: 'left',
         }
     }
-    if(position == "center"){
+    if(position === "center"){
         style = {
             alignItems: 'center',
             textAlign: 'center',
@@ -32,7 +32,7 @@ function CallToAction({title, desription, position, model, width}) {
     }
 
   return (
-    <div className="CallToAction" id={(model=='2')?'CallToAction2' : ((model=='3')? 'CallToAction3':'CallToAction')} style={style}>
+    <div className="CallToAction" id={(model==='2')?'CallToAction2' : ((model==='3')? 'CallToAction3':'CallToAction')} style={style}>
         {title && (<h1>{title}</h1>)}
         {desription && (<p>{desription}</p>)}
         <Button

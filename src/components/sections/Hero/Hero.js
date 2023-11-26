@@ -2,7 +2,6 @@ import "../Section.css";
 import "./Hero.css";
 import React from "react";
 import HeroIMmage from "./assets/hero.png"
-import Button from "../../Button/Button";
 import CallToAction from "../../CallToAction/CallToAction";
 
 function Hero() {
