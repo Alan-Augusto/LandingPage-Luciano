@@ -47,8 +47,6 @@
   }
   50% {
     transform: scale(1.5);
-    background-color: #ff006fda;
-    box-shadow: var(--box-shadow);
   }
   100% {
       transform: scale(1);

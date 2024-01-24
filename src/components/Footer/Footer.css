@@ -1,0 +1,22 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    cursor: pointer;
+    border: none;
+    height: 10em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width:auto;
+    background-color: var(--secundary-2);
+    font-size: .9em;
+}
+.footer-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+  

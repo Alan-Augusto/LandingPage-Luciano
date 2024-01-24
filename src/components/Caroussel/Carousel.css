@@ -1,5 +1,3 @@
-@import url('../../App.css');
-
 .Carousel{
     display: flex;
     flex-direction: row;
@@ -138,10 +136,10 @@
     cursor: pointer;
   }
   .button-page:hover{
-    animation: scale-button 1s ease-in-out;
+    animation: scale-button-carousel 1s ease-in-out;
   }
 
-  @keyframes scale-button {
+  @keyframes scale-button-carousel {
     0% {
       transform: scale(1);
     }

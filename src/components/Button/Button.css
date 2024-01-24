@@ -1,17 +1,18 @@
 .Button{
     cursor: pointer;
     border: none;
-    height: 40px;
+    height: 3em;
     border-radius: 20px;
     padding: 4px 12px;
+    font-size: .5em;
 }
 
 .Button:hover {
-    animation: scale 1s ease-in-out;
+    animation: scale-button-action 1s ease-in-out;
 }
   
 
-@keyframes scale {
+@keyframes scale-button-action {
     0% {
       transform: scale(1);
     }
