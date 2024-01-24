@@ -56,9 +56,11 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
             <ul className='menu-bar'>
               {
                 sectionIds.map((sectionId, i) => (
-                  <li key={i} onClick={() => scrollToSection(sectionId)}>
+                  <li className='menu-bar-elements' key={i} onClick={() => scrollToSection(sectionId)}>
                     <Link to="/" className={activeLink === sectionId ? "active" : ""}>{sectionId}</Link>
+                    { i !== sectionIds.length - 1 && <p>|</p> }
                   </li>
+                  
                 ))
               }
             </ul>

@@ -28,7 +28,6 @@ nav{
   backdrop-filter: blur(10px);
   box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   border-radius: 8px;
-  /*FIXME-CONFERIR BOXSHADOW*/
 }
 
 .container {
@@ -53,7 +52,19 @@ nav{
 .menu-bar {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: .8em;
+}
+
+.menu-bar-elements{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: .8em;
+}
+
+.menu-bar-elements p{
+  font-size: .5em;
+  font-weight: 100;
 }
 
 .menu-bar li a {
