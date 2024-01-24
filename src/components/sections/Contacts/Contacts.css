@@ -3,7 +3,90 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: .5em;
+    gap: 1em;
     width: 50%;
-    border: 1px solid red;
+}
+#Contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+}
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 90%;
+}
+.contact-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 20%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    width: 60%;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    width:60%;
+}
+.form-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .1em;
+    width: 100%;
+}
+.form-input input{
+    width: 100%;
+    height: 1em;
+    border: 1px solid #9d9d9d;
+    border-radius: .5em;
+    padding: 0.5em;
+    font-size: .5em;
+    font-weight: 400;
+    color: #000;
+}
+.form-input input:focus{
+    box-shadow: --box-shadow;
+    outline: none;
+}
+.form-input textarea{
+    width: 100%;
+    height: 9em;
+    border: 1px solid #9d9d9d;
+    border-radius: .5em;
+    padding: 0.5em;
+    font-size: .5em;
+    font-weight: 400;
+    color: #000;
+}
+.form-input span{
+    font-size: .5em;
+    font-weight: 700;
+    color: #000;
 }

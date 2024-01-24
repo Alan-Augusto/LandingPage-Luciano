@@ -1,9 +1,10 @@
 import React from "react"
-import Hero from "../components/Sections/Hero/Hero"
-import Services from "../components/Sections/Services/Services"
-import Contacts from "../components/Sections/Contacts/Contacts"
-import MoreInformations from "../components/Sections/MoreInformations/MoreInformations"
-import YourCases from "../components/Sections/YourCases/YourCases"
+import Hero from "../components/sections/Hero/Hero.js"
+import Services from "../components/sections/Services/Services"
+import Contacts from "../components/sections/Contacts/Contacts"
+import MoreInformations from "../components/sections/MoreInformations/MoreInformations"
+import YourCases from "../components/sections/YourCases/YourCases"
+import Assessments from "../components/sections/Assessments/Assessments.js"
 
 function Home(){
     return(
@@ -12,6 +13,7 @@ function Home(){
         <Services/>
         <MoreInformations/>
         <YourCases/>
+        <Assessments/>
         <Contacts/>
         </>
     )

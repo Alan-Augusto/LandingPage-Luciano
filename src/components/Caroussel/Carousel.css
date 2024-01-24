@@ -1,3 +1,5 @@
+@import url('../../App.css');
+
 .Carousel{
     display: flex;
     flex-direction: row;
@@ -44,7 +46,7 @@
     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6); 
+    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
 }
 
 .new-card-item{
@@ -57,7 +59,7 @@
     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6);  
+    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);  
     animation: aparecer .3s ease;
 }
 
@@ -83,7 +85,7 @@
     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6);
+    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
     transition: transform 0.3s ease;
     transform: translateX(-105%);
   }
@@ -98,7 +100,7 @@
     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 .5em rgba(8, 7, 16, 0.6);
+    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
     transition: transform 0.3s ease;
     transform: translateX(105%);
   }

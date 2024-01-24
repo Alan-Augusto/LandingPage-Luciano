@@ -119,7 +119,7 @@ function Carousel({
               {showImage && (
                 <div className="card-image">
                   <img
-                    src={require(`../Sections/YourCases/assets/${item.image}`)}
+                    src={require(`../sections/YourCases/assets/${item.image}`)}
                     alt={item.title}
                   />
                 </div>
@@ -154,7 +154,7 @@ function Carousel({
               {showImage && (
                 <div className="card-image">
                   <img
-                    src={require(`../Sections/YourCases/assets/${item.image}`)}
+                    src={require(`../sections/YourCases/assets/${item.image}`)}
                     alt={item.title}
                   />
                 </div>

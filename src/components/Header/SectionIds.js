@@ -1,5 +1,4 @@
 //Define os IDs das seçoes que está sendo scrollada
 
-export const sectionIds = ["Apresentacao","Serviços","Dúvidas", "Casos", "Contatos"];
+export const sectionIds = ["Apresentacao","Serviços","Dúvidas", "Casos", "Avaliações","Contatos"];
 
-//hero - about - testmonial - contact
