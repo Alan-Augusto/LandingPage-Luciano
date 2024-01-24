@@ -6,7 +6,7 @@ import CallToAction from "../../CallToAction/CallToAction";
 
 function Hero() {
   return (
-    <section className="section" id="Apresentacao">
+    <section className="section" id="Apresentação">
       <div id="hero-container">
         <CallToAction
           title="Defesa Trabalhista Exclusiva Para Empregados"

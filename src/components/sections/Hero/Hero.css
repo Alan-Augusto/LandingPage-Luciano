@@ -19,11 +19,11 @@
         justify-content: center;
         gap: 0;
     }
-    #Apresentacao {
+    #Apresentação {
         background-image: url('./assets/hero.png');
         background-size: cover;   
     }
-    #Apresentacao img {
+    #Apresentação img {
         display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
     }
 }
