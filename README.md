@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Landing Page - LGL Advocacia Trabalhista
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo à Landing Page de Luciano Graciano Leite! Este projeto foi desenvolvido com React para proporcionar uma experiência moderna e fluida aos visitantes. Abaixo estão informações importantes sobre a Landing Page e como explorar o projeto.
 
-## Available Scripts
+## Visão Geral
 
-In the project directory, you can run:
+A Landing Page foi criada para apresentar informações relevantes sobre Luciano e seu negócio de uma maneira atraente e acessível. Com um design intuitivo e moderno, esta página é ideal para destacar as qualidades e serviços oferecidos por ele.
 
-### `npm start`
+## Como Explorar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para visualizar a Landing Page, não é necessário executar o projeto localmente. Basta acessar [aqui](#) e aproveitar a experiência!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Se você está interessado em executar o projeto em sua máquina local para desenvolvimento ou personalização, siga as instruções no [Guia de Início Rápido](#início-rápido).
 
-### `npm test`
+## Recursos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Além da apresentação de informações sobre Luciano, a Landing Page oferece recursos interativos, incluindo:
 
-### `npm run build`
+- **Seção de Destaques:** Destaque de serviços, projetos ou habilidades de Luciano.
+- **Contato Rápido:** Formulário ou botão para entrar em contato diretamente.
+- **Design Responsivo:** Garante uma experiência consistente em diferentes dispositivos.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Sobre o Desenvolvimento
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto foi desenvolvido usando o Create React App, uma ferramenta popular para inicializar projetos React. Para saber mais sobre o desenvolvimento e personalização, consulte a seção [Configuração Avançada](https://facebook.github.io/create-react-app/docs/advanced-configuration) no guia do Create React App.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Saiba Mais
 
-### `npm run eject`
+- [Documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+- [Documentação do React](https://reactjs.org/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Explore a Landing Page e descubra mais sobre Luciano!
