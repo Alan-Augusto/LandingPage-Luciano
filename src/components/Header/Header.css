@@ -1,6 +1,6 @@
 .Header{
   height: 3.5rem;
-  background-color: var(--primary);
+  background: none;
   z-index: 1;
 }
 

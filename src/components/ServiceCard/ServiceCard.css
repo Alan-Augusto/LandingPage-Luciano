@@ -6,7 +6,10 @@
     border-radius: 4px;
     gap: 8px;
     padding: 8px;
-    box-shadow: 0 0 20px rgba(8, 7, 16, 0.25);
+    background: none;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(134, 134, 134, 0.25);
+    box-shadow: 0 0 20px rgba(108, 105, 128, 0.25);
 }
 .ServiceCard h3{
     text-transform: uppercase;

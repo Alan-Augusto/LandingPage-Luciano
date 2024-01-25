@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import AnimatedBackground from "./components/AnimatedBackground/AnimatedBackground.tsx";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           </div>
         </div>
       </Router>
+      <AnimatedBackground/>
       <Footer/>
     </div>
   );

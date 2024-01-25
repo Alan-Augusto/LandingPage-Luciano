@@ -4,7 +4,7 @@ import { VscWorkspaceTrusted } from 'react-icons/vsc';
 import { BsBookmarkStar } from 'react-icons/bs'
 const sizeIcons = '2em';
 const colorIcons="var(--tertiary)"
-const colorCard="var(--primary)"
+const colorCard="none"
 const colorText="var(--secundary)"
 const colorTextMark="var(--secundary-2)"
 

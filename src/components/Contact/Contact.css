@@ -11,7 +11,7 @@
     width: 100%;
 }
 .Contact:hover{
-    animation: scale-button-contact .8s ease-in-out;
+    animation: scale-button-contact 1s ease-in-out;
 }
 
 .Contact i {
