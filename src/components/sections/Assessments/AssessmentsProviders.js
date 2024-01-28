@@ -1,53 +1,58 @@
+//32x32
 const assessments = [
     {
-        title: "Ana Luiza Morais",
+        title: "Junior P.",
+        description: "Gratidão pelo carinho e pela competência em todos os serviços prestados. Você cuidou do meu processo com muita honestidade e profissionalismo e me aconselhou em todos os momentos. Obrigado pelo seu trabalho e esforço indico muito o Doutor Luciano.",
+        image: "JuniorP.png",
+        rating: 5,
+    },
+    {
+        title: "Ana Luiza M.",
         description: "Um ótimo profissional, resolveu minha demanda com excelência! super recomendo!",
-        image: "laura.jpg"
+        image: "AnaLuiza.png",
+        rating: 5,
     },
     {
-        title: "Luciana Leite",
-        description: "Excelente profissional, atencioso e prestativo. Recomendo!",
-        image: "laura.jpg"
+        title: "Cibelle Nunes",
+        description: "Luciano é um profissional extremamente solícito. Sempre disponível para esclarecer minhas dúvidas. Recomendo de olhos fechados.",
+        image: "CibelleNunes.png",
+        rating: 5,
     },
     {
-        title: "Maria Silva",
-        description: "Ótimo atendimento, solucionou meu problema rapidamente. Recomendo!",
-        image: "laura.jpg"
+        title: "Marcos Lott",
+        description: "Fiquei muito satisfeito. Recomendo muito o serviço",
+        image: "MarcosLott.png",
+        rating: 5,
     },
     {
-        title: "João Santos",
-        description: "Profissional competente e dedicado. Superou minhas expectativas!",
-        image: "laura.jpg"
+        title: "Alan Augusto",
+        description: "Ótimo advogado! Recomendo a todos.",
+        image: "AlanAugusto.png",
+        rating: 5,
     },
     {
-        title: "Carla Oliveira",
-        description: "Atendimento de qualidade, resolveu meu problema de forma eficiente. Recomendo!",
-        image: "laura.jpg"
+        title: "Marina Calixto",
+        description: "Excelente profissional!",
+        image: "MarinaCalixto.png",
+        rating: 5,
     },
     {
-        title: "Pedro Almeida",
-        description: "Excelente profissional, sempre disposto a ajudar. Recomendo!",
-        image: "laura.jpg"
+        title: "Yasmim S",
+        description: "Muito bom! Me ajudou muito",
+        image: "YasmimSenna.png",
+        rating: 5,
     },
     {
-        title: "Fernanda Costa",
-        description: "Atendimento rápido e eficiente. Fiquei muito satisfeita!",
-        image: "laura.jpg"
+        title: "Eduarda Seara",
+        description: "Excelente!",
+        image: "EduardaSeara.png",
+        rating: 5,
     },
     {
-        title: "Ricardo Santos",
-        description: "Profissional competente e confiável. Recomendo sem dúvidas!",
-        image: "laura.jpg"
-    },
-    {
-        title: "Camila Oliveira",
-        description: "Ótimo atendimento, resolveu meu problema com agilidade. Recomendo!",
-        image: "laura.jpg"
-    },
-    {
-        title: "Lucas Almeida",
-        description: "Excelente profissional, sempre disponível para ajudar. Recomendo!",
-        image: "laura.jpg"
+        title: "Júlia F. Lins",
+        description: "Admirável!",
+        image: "JuliaLins.png",
+        rating: 5,
     }
 ];
 

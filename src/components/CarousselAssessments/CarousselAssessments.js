@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./Carousel.css";
+import "./CarousselAssessments.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import CarouselItemIndicator from "./CarouselItemIndicator/CarouselItemIndicator";
+import CarousselAssessmentsItemIndicator from "./CarousselAssessmentsItemIndicator/CarousselAssessmentslItemIndicator";
+import { FaStar } from "react-icons/fa";
 
-function Carousel({
+function CarousselAssessments({
   items,
   itemsPerPage,
   showTitle,
@@ -102,11 +103,11 @@ function Carousel({
   }, [isNewCard]);
 
   return (
-    <div className="Carousel">
+    <div className="CarousselAssessments">
       <MdKeyboardArrowLeft onClick={handlePrevPage} className="button-page" />
-      <div className="carousel-general">
+      <div className="CarousselAssessments-general">
 
-        <div className="carousel-container">
+        <div className="CarousselAssessments-container">
           {displayedItems.map((item, i) => (
             <div
               className={`${
@@ -118,22 +119,29 @@ function Carousel({
               key={i}
             >
               {showImage && (
-                <div className="card-image">
+                <div className="card-person">
                   <img
                     src={require(`../../../public/images/${imagePath}/${item.image}`)}
                     alt={item.title}
                   />
+                  <div className="card-person-title">
+                    <h3>{item.title}</h3>
+                    <div className="card-person-rating">
+                      {Array(item.rating).fill().map((_, i) => (
+                        <FaStar key={i} color="yellow" height="5px" />
+                      ))}
+                    </div>
+                  </div>
                 </div>
               )}
               <div className="card-text">
-                {showTitle && <h3>{item.title}</h3>}
                 {showDescription && <p>{item.description}</p>}
               </div>
             </div>
           ))}
         </div>
-        <div className="carousel-indicator">
-          <CarouselItemIndicator
+        <div className="CarousselAssessments-indicator">
+          <CarousselAssessmentsItemIndicator
             numPages={totalItems - itemsPerPage + 1}
             currentPage={counter}
             colorItems={colorIndicator}
@@ -141,7 +149,7 @@ function Carousel({
           />
         </div>
 
-        <div className="mobile-carousel-container">
+        <div className="mobile-CarousselAssessments-container">
           {displayedItemsMobile.map((item, i) => (
             <div
               className={`${
@@ -153,7 +161,7 @@ function Carousel({
               key={i}
             >
               {showImage && (
-                <div className="card-image">
+                <div className="card-person">
                   <img
                     src={require(`../../../public/images/${imagePath}/${item.image}`)}
                     alt={item.title}
@@ -167,8 +175,8 @@ function Carousel({
             </div>
           ))}
         </div>
-        <div className="carousel-mobile-indicator">
-          <CarouselItemIndicator
+        <div className="CarousselAssessments-mobile-indicator">
+          <CarousselAssessmentsItemIndicator
             numPages={totalItems - 1}
             currentPage={counterMobile}
             colorItems={colorIndicator}
@@ -181,4 +189,4 @@ function Carousel({
   );
 }
 
-export default Carousel;
+export default CarousselAssessments;

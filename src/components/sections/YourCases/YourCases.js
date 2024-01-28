@@ -25,6 +25,7 @@ function YourCases(){
                     showDescription={true}
                     showTitle={true}
                     showImage={true}
+                    imagePath="YourCases"
                     colorIndicator={"var(--tertiary)"}
                 />
             </div>
