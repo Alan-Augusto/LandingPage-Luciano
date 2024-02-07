@@ -2,11 +2,12 @@ import "./App.css";
 import { sectionIds } from "./components/Header/SectionIds"
 import React, { useState } from 'react';
 import Header from "./components/Header/Header";
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home.js"
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import AnimatedBackground from "./components/AnimatedBackground/AnimatedBackground.tsx";
+import RecisaoContratoTrabalho from "./pages/Cases/RecisaoContratoTrabalho.js";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
         <Header activeLink={activeLink} setActiveLink={setActiveLink} scrollToSection={scrollToSection}/>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/rescisao-contrato-trabalho" element={<RecisaoContratoTrabalho/>} />
         </Routes>
         <div id="arrow-container">
           <div id="arrow-subcontainer">

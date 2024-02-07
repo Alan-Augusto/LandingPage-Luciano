@@ -45,6 +45,11 @@
     border-radius: 8px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
+    cursor: pointer;
+}
+
+.card-item:hover{
+  animation: scale-card .5s ease-in-out;
 }
 
 .new-card-item{
@@ -150,8 +155,19 @@
         transform: scale(1);
       }
   }
-  
 
+  @keyframes scale-card {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+      }
+  }
+  
   
   @media (max-width: 960px) {
     .carousel-container{

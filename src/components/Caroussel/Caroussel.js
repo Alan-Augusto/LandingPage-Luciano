@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Carousel.css";
+import { useNavigate } from "react-router-dom";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import CarouselItemIndicator from "./CarouselItemIndicator/CarouselItemIndicator";
 
@@ -10,8 +11,11 @@ function Carousel({
   showDescription,
   showImage,
   colorIndicator,
-  imagePath
+  imagePath,
 }) {
+
+  const navigate = useNavigate();
+
   const [transitionType, setTransitionType] = useState("");
   const totalItems = items.length;
 
@@ -116,6 +120,7 @@ function Carousel({
               }`}
               id={"card-item" + i}
               key={i}
+              onClick={() => navigate(item.route)}
             >
               {showImage && (
                 <div className="card-image">

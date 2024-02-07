@@ -12,7 +12,7 @@ function CarousselAssessments({
   showDescription,
   showImage,
   colorIndicator,
-  imagePath
+  imagePath,
 }) {
   const [transitionType, setTransitionType] = useState("");
   const totalItems = items.length;
