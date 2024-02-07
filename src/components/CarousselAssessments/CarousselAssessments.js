@@ -3,6 +3,7 @@ import "./CarousselAssessments.css";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import CarousselAssessmentsItemIndicator from "./CarousselAssessmentsItemIndicator/CarousselAssessmentslItemIndicator";
 import { FaStar } from "react-icons/fa";
+import { LuStar } from "react-icons/lu";
 
 function CarousselAssessments({
   items,
@@ -91,7 +92,7 @@ function CarousselAssessments({
   const displayedItemsMobile = items.slice(startItemMobile, endItemMobile);
 
   useEffect(() => {
-    // Remove a classe "new-card-item" após 0.3s
+    // Remove a classe "new-card-item-assessments" após 0.3s
     const timer = setTimeout(() => {
       setIsNewCard(null);
       setIsNewCardMobile(null);
@@ -113,9 +114,9 @@ function CarousselAssessments({
               className={`${
                 isTransitioning
                   ? "card-transition-" + transitionType
-                  : `${i === isNewCard ? "new-card-item" : "card-item"}`
+                  : `${i === isNewCard ? "new-card-item-assessments" : "card-item-assessments"}`
               }`}
-              id={"card-item" + i}
+              id={"card-item-assessments" + i}
               key={i}
             >
               {showImage && (
@@ -128,7 +129,10 @@ function CarousselAssessments({
                     <h3>{item.title}</h3>
                     <div className="card-person-rating">
                       {Array(item.rating).fill().map((_, i) => (
-                        <FaStar key={i} color="yellow" height="5px" />
+                        <div className="card-person-rating-star">
+                          <FaStar key={i} color="yellow" style={{height:'15px', width: 'auto', boxShadow:''}} />
+                          <LuStar key={i} color="gray" style={{height:'15px', width: 'auto', boxShadow:''}} />
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -155,9 +159,9 @@ function CarousselAssessments({
               className={`${
                 isTransitioningMobile
                   ? "card-transition-" + transitionType
-                  : `${i === isNewCardMobile ? "new-card-item" : "card-item"}`
+                  : `${i === isNewCardMobile ? "new-card-item-assessments" : "card-item-assessments"}`
               }`}
-              id={"card-item" + i}
+              id={"card-item-assessments" + i}
               key={i}
             >
               {showImage && (
