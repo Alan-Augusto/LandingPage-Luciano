@@ -15,7 +15,7 @@ function Hero() {
           button={true}
         />
         <div id="hero-image">
-          <img src={HeroIMmage} alt="Luciano Leite" />
+          <img src={HeroIMmage} alt="Luciano Graciano" />
         </div>
       </div>
     </section>

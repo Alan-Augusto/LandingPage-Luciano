@@ -42,7 +42,7 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     }
-  }, []);
+  }, [determineActiveSection]);
 
   return (
     <div className="Header">
@@ -50,7 +50,7 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
         <div className='container'>
           <div className='row'>
             <div className='logo'>
-              <p>LGL - Advocacia Trabalhista</p>
+              <p>Luciano Graciano - Advogado Trabalhista</p>
             </div>
 
             <ul className='menu-bar'>

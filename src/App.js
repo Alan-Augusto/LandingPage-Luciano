@@ -11,7 +11,7 @@ import RecisaoContratoTrabalho from "./pages/Cases/RecisaoContratoTrabalho.js";
 
 function App() {
 
-  const [activeLink, setActiveLink] = useState("apresentacao");
+  const [activeLink, setActiveLink] = useState("Apresentação");
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
