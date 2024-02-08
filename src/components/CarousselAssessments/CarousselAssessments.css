@@ -6,13 +6,13 @@
     padding: 8px 8px;
     border-radius: 8px;
     width: 90%;
-    height: 40vh;
+    height: 25vh;
 }
 .CarousselAssessments-container{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: baseline;
+    justify-content: baseline;
     width: 100%;
     height: 100%;
     gap: 16px;
@@ -42,7 +42,7 @@
     justify-content:baseline;
     padding: .2em;
     width: 100%;
-    height: 100%;
+     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@
     justify-content:baseline;
     padding: .2em;
     width: 100%;
-    height: 100%;
+     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -77,7 +77,7 @@
     }
 }
 
-.card-transition-right {
+.card-transition-right-assessments {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -85,7 +85,7 @@
     justify-content:baseline;
     padding: .2em;
     width: 100%;
-    height: 100%;
+     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -94,7 +94,7 @@
     transform: translateX(-105%);
   }
 
-  .card-transition-left {
+  .card-transition-left-assessments {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -102,7 +102,7 @@
     justify-content:baseline;
     padding: .2em;
     width: 100%;
-    height: 100%;
+     height: 100%;
     border-radius: 8px;
     backdrop-filter: blur(10px);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);

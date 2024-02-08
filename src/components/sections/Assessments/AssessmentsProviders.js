@@ -13,15 +13,27 @@ const assessments = [
         rating: 5,
     },
     {
+        title: "Marcos Lott",
+        description: "Fiquei muito satisfeito. Recomendo muito o serviço",
+        image: "MarcosLott.png",
+        rating: 5,
+    },
+    {
         title: "Cibelle Nunes",
         description: "Luciano é um profissional extremamente solícito. Sempre disponível para esclarecer minhas dúvidas. Recomendo de olhos fechados.",
         image: "CibelleNunes.png",
         rating: 5,
     },
     {
-        title: "Marcos Lott",
-        description: "Fiquei muito satisfeito. Recomendo muito o serviço",
-        image: "MarcosLott.png",
+        title: "Eduarda Seara",
+        description: "Excelente!",
+        image: "EduardaSeara.png",
+        rating: 5,
+    },
+    {
+        title: "Júlia F. Lins",
+        description: "Admirável!",
+        image: "JuliaLins.png",
         rating: 5,
     },
     {
@@ -42,18 +54,6 @@ const assessments = [
         image: "YasmimSenna.png",
         rating: 5,
     },
-    {
-        title: "Eduarda Seara",
-        description: "Excelente!",
-        image: "EduardaSeara.png",
-        rating: 5,
-    },
-    {
-        title: "Júlia F. Lins",
-        description: "Admirável!",
-        image: "JuliaLins.png",
-        rating: 5,
-    }
 ];
 
 

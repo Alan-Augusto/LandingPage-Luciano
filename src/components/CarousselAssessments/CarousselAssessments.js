@@ -17,6 +17,8 @@ function CarousselAssessments({
   const [transitionType, setTransitionType] = useState("");
   const totalItems = items.length;
 
+  const [larguraTela, setLarguraTela] = useState(window.innerWidth);
+
   const [currentPage, setCurrentPage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isNewCard, setIsNewCard] = useState(itemsPerPage - 1);
@@ -26,6 +28,23 @@ function CarousselAssessments({
   const [isTransitioningMobile, setIsTransitioningMobile] = useState(false);
   const [isNewCardMobile, setIsNewCardMobile] = useState(1);
   const [counterMobile, setCounterMobile] = useState(0);
+
+  useEffect(() => {
+    // Função de callback para atualizar a largura da tela
+    const atualizarLarguraDaTela = () => {
+      setLarguraTela(window.innerWidth);
+      console.log(larguraTela);
+    };
+
+    // Adiciona um event listener para o evento resize
+    window.addEventListener("resize", atualizarLarguraDaTela);
+
+    // Remove o event listener quando o componente for desmontado
+    return () => {
+      window.removeEventListener("resize", atualizarLarguraDaTela);
+    };
+  }, []); // Dependência vazia significa que o useEffect será executado apenas uma vez, após a montagem do componente
+
 
   const handleNextPage = () => {
     setTransitionType("right");
@@ -113,7 +132,7 @@ function CarousselAssessments({
             <div
               className={`${
                 isTransitioning
-                  ? "card-transition-" + transitionType
+                  ? "card-transition-" + transitionType + '-assessments'
                   : `${i === isNewCard ? "new-card-item-assessments" : "card-item-assessments"}`
               }`}
               id={"card-item-assessments" + i}
@@ -139,7 +158,7 @@ function CarousselAssessments({
                 </div>
               )}
               <div className="card-text">
-                {showDescription && <p>{item.description}</p>}
+              {showDescription && (item.description.length > 250 ? <p>{item.description.slice(0, 250)}...</p> : <p>{item.description}</p>)}
               </div>
             </div>
           ))}
@@ -158,7 +177,7 @@ function CarousselAssessments({
             <div
               className={`${
                 isTransitioningMobile
-                  ? "card-transition-" + transitionType
+                  ? "card-transition-" + transitionType + '-assessments'
                   : `${i === isNewCardMobile ? "new-card-item-assessments" : "card-item-assessments"}`
               }`}
               id={"card-item-assessments" + i}
