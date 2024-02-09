@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { sectionIds } from "./SectionIds"
 import './Header.css';
 import { Link } from 'react-router-dom';
+import { GoLaw } from "react-icons/go";
 
 function Header({activeLink, setActiveLink, scrollToSection}) {
 
@@ -50,7 +51,10 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
         <div className='container'>
           <div className='row'>
             <div className='logo'>
-              <p>Luciano Graciano - Advogado Trabalhista</p>
+              <GoLaw />
+              <p>
+                <strong>Luciano Graciano</strong> - Advogado Trabalhista
+              </p>
             </div>
 
             <ul className='menu-bar'>

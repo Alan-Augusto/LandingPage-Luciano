@@ -120,7 +120,7 @@ function Carousel({
               }`}
               id={"card-item" + i}
               key={i}
-              onClick={() => navigate(item.route)}
+              onClick={() => navigate(item.url)}
             >
               {showImage && (
                 <div className="card-image">
@@ -128,6 +128,7 @@ function Carousel({
                     src={require(`../../../public/images/${imagePath}/${item.image}`)}
                     alt={item.title}
                   />
+
                 </div>
               )}
               <div className="card-text">
@@ -156,6 +157,7 @@ function Carousel({
               }`}
               id={"card-item" + i}
               key={i}
+              onClick={() => navigate(item.url)}
             >
               {showImage && (
                 <div className="card-image">

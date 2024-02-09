@@ -1,19 +1,17 @@
-.CaseDefault{
+.Case{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
-    width: 100%;
 }
 
-.CaseDefault-cover{
+.Case-cover{
     width: 100%;
     height: 25vh;
     position: relative;
     align-items: center;
 }
 
-.CaseDefault-cover img{
+.Case-cover img{
     position: absolute;
     top: 0;
     left: 0;
@@ -22,14 +20,14 @@
     object-fit: cover;
 }
 
-.CaseDefault-cover-text{
+.Case-cover-text{
     /* style={{ position: "relative", zIndex: 1 }} */
     position: relative;
     z-index: 1;
     color: white;
 }
 
-.CaseDefault-Data{
+.Case-Data{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -3,7 +3,7 @@ import "../Section.css";
 import "./YourCases.css";
 import React from "react";
 import CallToAction from "../../CallToAction/CallToAction";
-import {cases} from "./CasesProviders"
+import {cases} from "../../../pages/Cases/CasesProviders.js"
 
 function YourCases(){
     return(
