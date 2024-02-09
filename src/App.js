@@ -58,11 +58,3 @@ function App() {
 }
 
 export default App;
-
-
-  /*
-    <Header/>
-    <HeroSection/>
-    <ServicesSection/>
-    <ContactSection/>    
-  */

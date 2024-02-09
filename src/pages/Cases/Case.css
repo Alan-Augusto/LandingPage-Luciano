@@ -2,34 +2,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+    font-size: 100%;
 }
 
-.Case-cover{
+.Case-cover {
     width: 100%;
-    height: 25vh;
-    position: relative;
+    height: 20vh;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--tertiary);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Para cobrir toda a extensão do elemento */
 }
 
-.Case-cover img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .Case-cover-text{
-    /* style={{ position: "relative", zIndex: 1 }} */
-    position: relative;
-    z-index: 1;
-    color: white;
+    text-align: center;
+    color: var(--primary);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: .5em;
+    object-fit: cover;
+    padding: .5em;
 }
 
 .Case-Data{
     display: flex;
     flex-direction: column;
+    gap: 2em;
+    margin: 5vh 20vh;
+    height: auto;
+}
+
+.Case-Data-Text{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.Case-Action{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    gap: .5em;
+    font-size: 200%;
+    margin-bottom: 2em;
+    color: rgb(125, 125, 125);
 }
