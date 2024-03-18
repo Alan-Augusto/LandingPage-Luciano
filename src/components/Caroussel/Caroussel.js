@@ -33,6 +33,12 @@ function Carousel({
     setTransitionType("right");
 
     if (counter + 1 <= totalItems - itemsPerPage) {
+      // Pré-carrega a próxima imagem
+      const nextImage = new Image();
+      nextImage.src = require(`../../../public/images/${imagePath}/${items[counter + 1].image}`);
+    }
+
+    if (counter + 1 <= totalItems - itemsPerPage) {
       setIsTransitioning(true);
       setCounter(counter + 1);
       setTimeout(() => {
@@ -108,6 +114,16 @@ function Carousel({
   return (
     <div className="Carousel">
       <MdKeyboardArrowLeft onClick={handlePrevPage} className="button-page" />
+
+    {/* Div fake */}
+      <div style={{ display: 'none' }}>
+        {items.length > endItem && (
+          <img
+            src={require(`../../../public/images/${imagePath}/${items[endItem].image}`)}
+            alt={items[endItem].title}
+          />
+        )}
+      </div>
       <div className="carousel-general">
 
         <div className="carousel-container">

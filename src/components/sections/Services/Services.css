@@ -1,34 +1,25 @@
-#Serviços{
-    padding: 1em 2em;
-    display: flex;
-    flex-direction: row;
+#Serviços {
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: row;
 }
-.cards-main{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-#services-new-action{
-    display: none;
+.cards-main {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 960px) {
-    #Serviços{
-        flex-direction: column-reverse;
-        gap: 32px;
-        padding-top: 2em;
-    }
-    .cards-main{
-        padding: 0px;
-        width: 90%;
-        justify-content: center;
-    }
-    #services-new-action{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  #Serviços {
+    flex-direction: column-reverse;
+    gap: 32px;
+    padding-top: 2em;
+  }
+  .cards-main {
+    padding: 0px;
+    width: 90%;
+    justify-content: center;
+  }
 }

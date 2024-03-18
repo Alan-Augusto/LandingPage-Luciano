@@ -1,26 +1,26 @@
-.Carousel{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 8px;
-    border-radius: 8px;
-    width: 80%;
-    height: 40vh;
+.Carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px;
+  border-radius: 8px;
+  width: 75%;
+  height: 40vh;
 }
-.carousel-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 16px;
-    padding: .5em;
-    overflow: hidden;
+.carousel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  padding: 0.5em;
+  overflow: hidden;
 }
 
-.carousel-general{
+.carousel-general {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,176 +30,183 @@
   gap: 8px;
 }
 
-.carousel-mobile-indicator{
+.carousel-mobile-indicator {
   display: none;
 }
 
-.card-item{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content:baseline;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
-    cursor: pointer;
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0.8rem rgba(0 0 0 / 0.1);
+  cursor: pointer;
 }
 
-.card-item:hover{
-  animation: scale-card .5s ease-in-out;
+.card-item:hover {
+  animation: scale-card 0.5s ease-in-out;
 }
 
-.new-card-item{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content:baseline;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
-    cursor: pointer;  
-    animation: aparecer .3s ease;
+.new-card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0.8rem rgba(0 0 0 / 0.1);
+  cursor: pointer;
+  animation: aparecer 0.3s ease;
 }
-
 
 @keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .card-transition-right {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content:baseline;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: translateX(-105%);
-  }
-
-  .card-transition-left {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
-    justify-content:baseline;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 .8rem rgba(0 0 0 / 0.1);
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    transform: translateX(105%);
-  }
-
-.card-text h3{
-    font-size: 16px;
-    font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0.8rem rgba(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translateX(-105%);
 }
-.card-text p{
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: none;
-    text-align: left;
-    margin: 4px;
+
+.card-transition-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 0.8rem rgba(0 0 0 / 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: translateX(105%);
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-text p {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+  margin: 4px;
 }
 
 .card-image {
-    width: 100%;
-    height: 16vh;
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: 16vh;
+  overflow: hidden;
+  border-radius: 8px;
+}
 
-  .mobile-carousel-container{
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mobile-carousel-container {
+  display: none;
+}
+
+.button-page {
+  cursor: pointer;
+  height: 2rem !important;
+}
+.button-page:hover {
+  animation: scale-button-carousel 1s ease-in-out;
+}
+
+@keyframes scale-button-carousel {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 960px) {
+  .Carousel {
+    gap: 0rem;
+    padding: 0;
+    width: 90%;
+  }
+  .carousel-container {
     display: none;
   }
-
-  .button-page{
-    cursor: pointer;
+  .mobile-carousel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    width: 80%;
+    height: 100%;
+    gap: 12px;
+    overflow: hidden;
   }
-  .button-page:hover{
-    animation: scale-button-carousel 1s ease-in-out;
+  .carousel-mobile-indicator {
+    display: flex;
   }
-
-  @keyframes scale-button-carousel {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.3);
-    }
-    100% {
-        transform: scale(1);
-      }
+  .carousel-indicator {
+    display: none;
   }
-
-  @keyframes scale-card {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-      }
+  .card-transition-left {
+    transform: translateX(110%);
   }
-  
-  
-  @media (max-width: 960px) {
-    .carousel-container{
-        display: none;
-    }
-    .mobile-carousel-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: .5em;
-        width: 100%;
-        height: 100%;
-        gap: 16px;
-        overflow: hidden;
-    }
-    .carousel-mobile-indicator{
-      display: flex;
-    }
-    .carousel-indicator{
-      display: none;
-    }
-    .card-transition-left {
-      transform: translateX(108%);
-    }
-    .card-transition-right {
-      transform: translateX(-108%);
-    }
-    .card-text p{
-      font-size: 12px;
+  .card-transition-right {
+    transform: translateX(-110%);
   }
+  .card-text p {
+    font-size: 12px;
   }
+  .button-page {
+    margin: 0;
+  }
+}

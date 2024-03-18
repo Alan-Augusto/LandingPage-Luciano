@@ -1,30 +1,24 @@
-#doubts-container{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+#doubts-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
-#Dúvidas img{
-    height: 70vh;
+#Dúvidas img {
+  height: 70vh;
 }
-
-
-
 
 @media (max-width: 960px) {
-    #doubts-container{
-        justify-content: center;
-        gap: 0;
-    }
-    #Dúvidas {
-        background-image: url('./assets/duvida.png');
-        background-size: cover;
-        background-position: center;  
-    }
-    #Dúvidas img {
-        display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
-    }
+  #doubts-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 0;
+  }
+  #Dúvidas img {
+    height: 50vh;
+  }
 }

@@ -1,229 +1,280 @@
-.CarousselAssessments{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 8px;
-    border-radius: 8px;
-    width: 90%;
-    height: 25vh;
+.CarousselAssessments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  padding: 8px 8px;
+  border-radius: 8px;
+  width: 100%;
+  height: 30vh;
 }
-.CarousselAssessments-container{
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: baseline;
-    width: 100%;
-    height: 100%;
-    gap: 16px;
-    padding: .5em;
-    overflow: hidden;
+.CarousselAssessments-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: baseline;
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  padding: 0.5em;
+  overflow: hidden;
 }
 
-.CarousselAssessments-general{
+.CarousselAssessments-general {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-  gap: 8px;
+  gap: 1rem;
 }
 
-.CarousselAssessments-mobile-indicator{
+.CarousselAssessments-mobile-indicator {
   display: none;
 }
 
-.card-item-assessments{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content:baseline;
-    padding: .2em;
-    width: 100%;
-     height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
+.card-item-assessments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: baseline;
+  padding: 0.2em;
+  width: 10rem;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
-.new-card-item-assessments{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content:baseline;
-    padding: .2em;
-    width: 100%;
-     height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0; 
-    animation: aparecer .3s ease;
+.new-card-item-assessments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: baseline;
+  padding: 0.2em;
+  width: 10rem;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  animation: aparecer 0.3s ease;
 }
-
 
 @keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .card-transition-right-assessments {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content:baseline;
-    padding: .2em;
-    width: 100%;
-     height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-    transition: transform 0.3s ease;
-    transform: translateX(-105%);
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: baseline;
+  padding: 0.2em;
+  width: 10rem;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+  transform: translateX(-105%);
+}
 
+.card-transition-left-assessments {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: baseline;
+  padding: 0.2em;
+  width: 10rem;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+  transform: translateX(105%);
+}
+
+.card-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-text p {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+  margin: 4px;
+}
+
+.card-person {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  height: auto;
+  align-items: flex-start;
+}
+
+.card-person-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-person-rating-star {
+  position: relative;
+  margin-right: 12px;
+}
+
+.card-person-rating-star > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card-person-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.card-person img {
+  width: 32px;
+  height: 32px;
+}
+
+.card-person h3 {
+  font-size: 15px;
+}
+
+.card-person-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.mobile-CarousselAssessments-container {
+  display: none;
+}
+
+.button-page-assessments {
+  cursor: pointer;
+  height: 2rem !important;
+}
+.button-page:hover {
+  animation: scale-button-CarousselAssessments 1s ease-in-out;
+}
+
+@keyframes scale-button-CarousselAssessments {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
   .card-transition-left-assessments {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: flex-start;
-    justify-content:baseline;
-    padding: .2em;
-    width: 100%;
-     height: 100%;
-    border-radius: 8px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-    transition: transform 0.3s ease;
-    transform: translateX(105%);
+    width: 8rem;
   }
-
-.card-text h3{
-    font-size: 16px;
-    font-weight: 600;
-}
-.card-text p{
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: none;
-    text-align: left;
-    margin: 4px;
 }
 
-  .card-person {
-    display: flex;
-    flex-direction: row;
-    gap: .2em;
-    height: auto;
-    align-items: flex-start;
+@media (max-width: 840px) {
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
+  .card-transition-left-assessments {
+    width: 7rem;
   }
+}
 
-  .card-person-rating{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .card-person-rating-star {
-    position: relative;
-    margin-right: 12px;
-  }
-  
-  .card-person-rating-star > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-
-  .card-person-title {
-    display: flex;
-    flex-direction: column  ;
-    width: 100%;
-    align-items: flex-start;
-  }
-  
-  .card-person img {
-    width: 32px;
-    height: 32px;
-  }
-
-  .card-person h3 {
-    font-size: 15px;
-  }
-
-  .card-person-rating{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: flex-start;
-  }
-
-  .mobile-CarousselAssessments-container{
+@media (max-width: 800px) {
+  .CarousselAssessments-container {
     display: none;
   }
+  .mobile-CarousselAssessments-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    overflow: hidden;
+  }
+  .CarousselAssessments-mobile-indicator {
+    display: flex;
+  }
+  .CarousselAssessments-indicator {
+    display: none;
+  }
+  .card-transition-left {
+    transform: translateX(130%);
+  }
+  .card-transition-right {
+    transform: translateX(-130%);
+  }
+  .card-text p {
+    font-size: 12px;
+  }
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
+  .card-transition-left-assessments {
+    width: 12rem;
+  }
+}
 
-  .button-page{
-    cursor: pointer;
+@media (max-width: 600px) {
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
+  .card-transition-left-assessments {
+    width: 10rem;
+    font-size: small;
   }
-  .button-page:hover{
-    animation: scale-button-CarousselAssessments 1s ease-in-out;
-  }
+}
 
-  @keyframes scale-button-CarousselAssessments {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.3);
-    }
-    100% {
-        transform: scale(1);
-      }
+@media (max-width: 500px) {
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
+  .card-transition-left-assessments {
+    width: 9rem;
+    font-size: small;
   }
-  
+}
 
-  
-  @media (max-width: 960px) {
-    .CarousselAssessments-container{
-        display: none;
-    }
-    .mobile-CarousselAssessments-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        padding: .5em;
-        width: 100%;
-        height: 100%;
-        gap: 16px;
-        overflow: hidden;
-    }
-    .CarousselAssessments-mobile-indicator{
-      display: flex;
-    }
-    .CarousselAssessments-indicator{
-      display: none;
-    }
-    .card-transition-left {
-      transform: translateX(108%);
-    }
-    .card-transition-right {
-      transform: translateX(-108%);
-    }
-    .card-text p{
-      font-size: 12px;
+@media (max-width: 400px) {
+  .card-item-assessments,
+  .new-card-item-assessments,
+  .card-transition-right-assessments,
+  .card-transition-left-assessments {
+    width: 8rem;
+    font-size: small;
   }
-  }
+}

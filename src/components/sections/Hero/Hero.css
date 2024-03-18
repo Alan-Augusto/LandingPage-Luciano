@@ -1,29 +1,20 @@
-#hero-container{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+#hero-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
-#Apresentacao img{
-    height: 70vh;
+#Apresentacao img {
+  height: 70vh;
 }
-
-
-
 
 @media (max-width: 960px) {
-    #hero-container{
-        justify-content: center;
-        gap: 0;
-    }
-    #Apresentação {
-        background-image: url('./assets/hero.png');
-        background-size: cover;   
-    }
-    #Apresentação img {
-        display: none; /* Oculte a imagem se a imagem de fundo estiver ativa */
-    }
+  #hero-container {
+    padding-top: 3rem;
+    flex-direction: column;
+    gap: 0;
+  }
 }

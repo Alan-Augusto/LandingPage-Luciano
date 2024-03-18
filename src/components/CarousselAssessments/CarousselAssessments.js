@@ -5,19 +5,9 @@ import CarousselAssessmentsItemIndicator from "./CarousselAssessmentsItemIndicat
 import { FaStar } from "react-icons/fa";
 import { LuStar } from "react-icons/lu";
 
-function CarousselAssessments({
-  items,
-  itemsPerPage,
-  showTitle,
-  showDescription,
-  showImage,
-  colorIndicator,
-  imagePath,
-}) {
+function CarousselAssessments({ items, itemsPerPage, showTitle, showDescription, showImage, colorIndicator, imagePath }) {
   const [transitionType, setTransitionType] = useState("");
   const totalItems = items.length;
-
-  const [larguraTela, setLarguraTela] = useState(window.innerWidth);
 
   const [currentPage, setCurrentPage] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -29,23 +19,6 @@ function CarousselAssessments({
   const [isNewCardMobile, setIsNewCardMobile] = useState(1);
   const [counterMobile, setCounterMobile] = useState(0);
 
-  useEffect(() => {
-    // Função de callback para atualizar a largura da tela
-    const atualizarLarguraDaTela = () => {
-      setLarguraTela(window.innerWidth);
-      console.log(larguraTela);
-    };
-
-    // Adiciona um event listener para o evento resize
-    window.addEventListener("resize", atualizarLarguraDaTela);
-
-    // Remove o event listener quando o componente for desmontado
-    return () => {
-      window.removeEventListener("resize", atualizarLarguraDaTela);
-    };
-  }, []); // Dependência vazia significa que o useEffect será executado apenas uma vez, após a montagem do componente
-
-
   const handleNextPage = () => {
     setTransitionType("right");
 
@@ -55,9 +28,7 @@ function CarousselAssessments({
       setTimeout(() => {
         setIsTransitioning(false);
         setIsNewCard(itemsPerPage - 1);
-        setCurrentPage((prevPage) =>
-          Math.min(totalItems - itemsPerPage, prevPage + 1)
-        );
+        setCurrentPage((prevPage) => Math.min(totalItems - itemsPerPage, prevPage + 1));
       }, 500);
     }
 
@@ -67,9 +38,7 @@ function CarousselAssessments({
       setTimeout(() => {
         setIsTransitioningMobile(false);
         setIsNewCardMobile(1);
-        setCurrentPageMobile((prevPage) =>
-          Math.min(totalItems - 2, prevPage + 1)
-        );
+        setCurrentPageMobile((prevPage) => Math.min(totalItems - 2, prevPage + 1));
       }, 500);
     }
   };
@@ -124,90 +93,75 @@ function CarousselAssessments({
 
   return (
     <div className="CarousselAssessments">
-      <MdKeyboardArrowLeft onClick={handlePrevPage} className="button-page" />
+      <MdKeyboardArrowLeft onClick={handlePrevPage} className="button-page-assessments" />
       <div className="CarousselAssessments-general">
-
         <div className="CarousselAssessments-container">
           {displayedItems.map((item, i) => (
             <div
-              className={`${
-                isTransitioning
-                  ? "card-transition-" + transitionType + '-assessments'
-                  : `${i === isNewCard ? "new-card-item-assessments" : "card-item-assessments"}`
-              }`}
+              className={`${isTransitioning ? "card-transition-" + transitionType + "-assessments" : `${i === isNewCard ? "new-card-item-assessments" : "card-item-assessments"}`}`}
               id={"card-item-assessments" + i}
               key={i}
             >
               {showImage && (
                 <div className="card-person">
-                  <img
-                    src={require(`../../../public/images/${imagePath}/${item.image}`)}
-                    alt={item.title}
-                  />
+                  <img src={require(`../../../public/images/${imagePath}/${item.image}`)} alt={item.title} />
                   <div className="card-person-title">
                     <h3>{item.title}</h3>
                     <div className="card-person-rating">
-                      {Array(item.rating).fill().map((_, i) => (
-                        <div className="card-person-rating-star">
-                          <FaStar key={i} color="yellow" style={{height:'15px', width: 'auto', boxShadow:''}} />
-                          <LuStar key={i} color="gray" style={{height:'15px', width: 'auto', boxShadow:''}} />
-                        </div>
-                      ))}
+                      {Array(item.rating)
+                        .fill()
+                        .map((_, i) => (
+                          <div className="card-person-rating-star">
+                            <FaStar key={i} color="yellow" style={{ height: "15px", width: "auto", boxShadow: "" }} />
+                            <LuStar key={i} color="gray" style={{ height: "15px", width: "auto", boxShadow: "" }} />
+                          </div>
+                        ))}
                     </div>
                   </div>
                 </div>
               )}
-              <div className="card-text">
-              {showDescription && (item.description.length > 250 ? <p>{item.description.slice(0, 250)}...</p> : <p>{item.description}</p>)}
-              </div>
+              <div className="card-text">{showDescription && (item.description.length > 80 ? <p>{item.description.slice(0, 80)}...</p> : <p>{item.description}</p>)}</div>
             </div>
           ))}
         </div>
         <div className="CarousselAssessments-indicator">
-          <CarousselAssessmentsItemIndicator
-            numPages={totalItems - itemsPerPage + 1}
-            currentPage={counter}
-            colorItems={colorIndicator}
-            heightItems={"12px"}
-          />
+          <CarousselAssessmentsItemIndicator numPages={totalItems - itemsPerPage + 1} currentPage={counter} colorItems={colorIndicator} heightItems={"12px"} />
         </div>
 
         <div className="mobile-CarousselAssessments-container">
           {displayedItemsMobile.map((item, i) => (
             <div
-              className={`${
-                isTransitioningMobile
-                  ? "card-transition-" + transitionType + '-assessments'
-                  : `${i === isNewCardMobile ? "new-card-item-assessments" : "card-item-assessments"}`
-              }`}
+              className={`${isTransitioningMobile ? "card-transition-" + transitionType + "-assessments" : `${i === isNewCardMobile ? "new-card-item-assessments" : "card-item-assessments"}`}`}
               id={"card-item-assessments" + i}
               key={i}
             >
               {showImage && (
                 <div className="card-person">
-                  <img
-                    src={require(`../../../public/images/${imagePath}/${item.image}`)}
-                    alt={item.title}
-                  />
+                  <img src={require(`../../../public/images/${imagePath}/${item.image}`)} alt={item.title} />
+                  <div className="card-person-title">
+                    {item.title.length > 7 ? <h3>{item.title.slice(0, 7)}...</h3> : <h3>{item.description}</h3>}
+                    <div className="card-person-rating">
+                      {Array(item.rating)
+                        .fill()
+                        .map((_, i) => (
+                          <div className="card-person-rating-star">
+                            <FaStar key={i} color="yellow" style={{ height: "15px", width: "auto", boxShadow: "" }} />
+                            <LuStar key={i} color="gray" style={{ height: "15px", width: "auto", boxShadow: "" }} />
+                          </div>
+                        ))}
+                    </div>
+                  </div>
                 </div>
               )}
-              <div className="card-text">
-                {showTitle && <h3>{item.title}</h3>}
-                {showDescription && <p>{item.description}</p>}
-              </div>
+              <div className="card-text">{showDescription && (item.description.length > 80 ? <p>{item.description.slice(0, 84)}...</p> : <p>{item.description}</p>)}</div>
             </div>
           ))}
         </div>
         <div className="CarousselAssessments-mobile-indicator">
-          <CarousselAssessmentsItemIndicator
-            numPages={totalItems - 1}
-            currentPage={counterMobile}
-            colorItems={colorIndicator}
-            heightItems={"12px"}
-          />
+          <CarousselAssessmentsItemIndicator numPages={totalItems - 1} currentPage={counterMobile} colorItems={colorIndicator} heightItems={"12px"} />
         </div>
       </div>
-      <MdKeyboardArrowRight onClick={handleNextPage} className="button-page" />
+      <MdKeyboardArrowRight onClick={handleNextPage} className="button-page-assessments" />
     </div>
   );
 }

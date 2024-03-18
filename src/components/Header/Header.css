@@ -1,4 +1,4 @@
-.Header{
+.Header {
   height: 3.5rem;
   background: none;
   z-index: 1;
@@ -14,12 +14,12 @@
   transition: color 0.3s ease-in-out;
 }
 
-
-.Header a:hover, a.active {
+.Header a:hover,
+a.active {
   color: var(--quaternary);
 }
 
-nav{
+nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,6 @@ nav{
   padding: 16px;
   margin-inline: auto;
 }
-
 
 .logo {
   display: flex;
@@ -55,18 +54,18 @@ nav{
 .menu-bar {
   display: flex;
   flex-direction: row;
-  gap: .8em;
+  gap: 0.8em;
 }
 
-.menu-bar-elements{
+.menu-bar-elements {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: .8em;
+  gap: 0.8em;
 }
 
-.menu-bar-elements p{
-  font-size: .5em;
+.menu-bar-elements p {
+  font-size: 0.5em;
   font-weight: 100;
 }
 
@@ -75,12 +74,11 @@ nav{
   font-size: 16px;
 }
 
-.mobile-menu-bar{
+.mobile-menu-bar {
   display: none;
-  
 }
 
-.mobile-menu-bar select{
+.mobile-menu-bar select {
   border: none;
   cursor: pointer;
   font-size: 16px;
@@ -89,11 +87,16 @@ nav{
   color: var(--quaternary);
 }
 
+.nameLogo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (max-width: 960px) {
   .mobile-menu-bar {
     display: flex;
   }
-  .menu-bar{
+  .menu-bar {
     display: none;
   }
 }

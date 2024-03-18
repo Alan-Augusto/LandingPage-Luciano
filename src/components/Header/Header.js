@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { sectionIds } from "./SectionIds"
-import './Header.css';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { sectionIds } from "./SectionIds";
+import "./Header.css";
+import { Link } from "react-router-dom";
 import { GoLaw } from "react-icons/go";
 
-function Header({activeLink, setActiveLink, scrollToSection}) {
-
+function Header({ activeLink, setActiveLink, scrollToSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const determineActiveSection = () => {
@@ -19,13 +18,13 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
         }
       }
     }
-  }
+  };
 
   const handleSelectChange = (event) => {
     const selectedSection = event.target.value;
     setActiveLink(selectedSection);
     scrollToSection(selectedSection);
-  }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,40 +35,40 @@ function Header({activeLink, setActiveLink, scrollToSection}) {
       }
 
       determineActiveSection();
-    }
+    };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    }
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [determineActiveSection]);
 
   return (
     <div className="Header">
       <nav className={isScrolled ? "scrolled" : ""}>
-        <div className='container'>
-          <div className='row'>
-            <div className='logo'>
+        <div className="container">
+          <div className="row">
+            <div className="logo">
               <GoLaw />
-              <p>
-                <strong>Luciano Graciano</strong> - Advogado Trabalhista
+              <p className="nameLogo">
+                <strong>Luciano Graciano</strong>
+                <p> - Advogado Trabalhista</p>
               </p>
             </div>
 
-            <ul className='menu-bar'>
-              {
-                sectionIds.map((sectionId, i) => (
-                  <li className='menu-bar-elements' key={i} onClick={() => scrollToSection(sectionId)}>
-                    <Link to="/" className={activeLink === sectionId ? "active" : ""}>{sectionId}</Link>
-                    { i !== sectionIds.length - 1 && <p>|</p> }
-                  </li>
-                  
-                ))
-              }
+            <ul className="menu-bar">
+              {sectionIds.map((sectionId, i) => (
+                <li className="menu-bar-elements" key={i} onClick={() => scrollToSection(sectionId)}>
+                  <Link to="/" className={activeLink === sectionId ? "active" : ""}>
+                    {sectionId}
+                  </Link>
+                  {i !== sectionIds.length - 1 && <p>|</p>}
+                </li>
+              ))}
             </ul>
 
-            <div className='mobile-menu-bar'>
+            <div className="mobile-menu-bar">
               <select onChange={handleSelectChange} value={activeLink}>
                 {sectionIds.map((section, i) => (
                   <option key={i} value={section}>

@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="Footer">
-        <div className="footer-line">
+      {/* <div className="footer-line">
           <div className="footer-infos">
             <h4>Contato</h4>
             <p>
@@ -41,7 +41,7 @@ function Footer() {
               © 2024 - LGL Advocacia Trabalhista. Todos os direitos reservados.
             </p>
           </div>
-      </div>
+      </div> */}
     </footer>
   );
 }
