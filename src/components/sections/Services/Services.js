@@ -18,6 +18,7 @@ function Services() {
             colorCard={service.colorCard}
             colorText={service.colorText}
             colorTextMark={service.colorTextMark}
+            special={service.special}
           />
         ))}
       </div>
