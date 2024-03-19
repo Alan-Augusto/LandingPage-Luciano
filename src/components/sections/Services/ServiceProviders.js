@@ -21,8 +21,8 @@ const colorTextMark = "var(--secundary-2)";
 
 const services = [
   {
-    title: "Bares e Restaurante",
-    description: ["Piso Salarial", "Hora Extra", "Freelance/Autônomo", "FGTS em Gorjeta", "Horas de Almoço/Janta", "Insalubridade"],
+    title: "Bares e Restaurantes",
+    description: ["Piso Salarial", "Hora Extra", "Freelance/Autônomo", "FGTS em gorjeta", "Horas de Almoço/Janta", "Insalubridade"],
     icon: <BiDrink size={sizeIcons} color={"red"} />,
     linkTo: "",
     colorTextMark: colorTextMark,

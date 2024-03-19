@@ -42,7 +42,7 @@ const cases = [
       {
         title: "Piso Salarial",
         content:
-          "A convenção define um piso salarial SUPERIOR AO SALÁRIO MÍNIMO NACIONAL, garantindo um salárIO mais justo para a categoria. O valor específico varia de acordo com a função exercida pelo garçom e seu tempo de serviço. Se o empregado trabalha com garçom em uma das cidades afetadas pela convenção, ele tem direito a receber o piso salarial estabelecido.",
+          "A convenção define um piso salarial SUPERIOR AO SALÁRIO MÍNIMO NACIONAL, garantindo um salário mais justo para a categoria. O valor específico varia de acordo com a função exercida pelo garçom e seu tempo de serviço. Se o empregado trabalha com garçom em uma das cidades afetadas pela convenção, ele tem direito a receber o piso salarial estabelecido.",
       },
       {
         title: "Hora Extra Convencional",
