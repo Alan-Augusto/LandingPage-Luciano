@@ -24,7 +24,7 @@ function Services() {
       </div>
       <CallToAction
         title="Minhas principais experiências te atendem?"
-        desription="Faço Orientações Jurídicas em situações relacionadas à defesa de empregados na Justiça do Trabalho"
+        desription="Faço defesas jurídicas em situações relacionadas aos empregados na Justiça do Trabalho"
         position="right"
         model="2"
         button={true}

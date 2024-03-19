@@ -8,12 +8,7 @@ function Hero() {
   return (
     <section className="section" id="Apresentação">
       <div id="hero-container">
-        <CallToAction
-          title="Defesa Trabalhista Exclusiva Para Empregados"
-          desription="cada cliente é único e seu caso é nosso compromisso"
-          position="left"
-          button={true}
-        />
+        <CallToAction title="Defesa Trabalhista Para Empregados" desription="cada cliente é único e seu caso é nosso compromisso" position="left" button={true} />
         <div id="hero-image">
           <img src={HeroIMmage} alt="Luciano Graciano" />
         </div>
