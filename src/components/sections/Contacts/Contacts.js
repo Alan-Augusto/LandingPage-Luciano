@@ -19,15 +19,10 @@ function Contacts() {
           link="https://api.whatsapp.com/send?phone=5531991469620&text=Ol%C3%A1,%20Dr.Luciano!%0AVim%20pelo%20seu%20site.%20Gostaria%20de%20orienta%C3%A7%C3%B5es."
           icon={<FaWhatsapp size={"1.9em"} />}
         />
-        <Contact
-          title="Instagram"
-          value="@lgladvtrabalhista"
-          color="radial-insta"
-          link="https://www.instagram.com/lgladvtrabalhista?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
-          icon={<FaInstagram size={"1.9em"} />}
-        />
-        <Contact title="E-mail" value="luciano.314@hotmail.com" color="radial-email" link="mailto:luciano.314@hotmail.com" icon={<MdOutlineEmail size={"1.9em"} />} />
+        <Contact title="Instagram" value="@lgladvtrabalhista" color="radial-insta" link="https://www.instagram.com/lucianograciano.adv/" icon={<FaInstagram size={"1.9em"} />} />
+        <Contact title="E-mail" value="lucianogracianoadv@gmail.com" color="radial-email" link="mailto:lucianogracianoadv@gmail.com" icon={<MdOutlineEmail size={"1.9em"} />} />
       </div>
+      <p style={{ fontSize: "20px" }}>Atendemos presencialemnte ou online</p>
     </section>
   );
 }
