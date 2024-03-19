@@ -33,16 +33,17 @@ const cases = [
       },
     ],
   },
+  //CONVENCAO DOS GARÇONS
   {
-    title: "Convenção dos Garçons",
-    description: "Conheça os direitos previstos na convenção coletiva da categoria 2023/2024.",
+    title: "Direitos Convencionais em Bares e Restaurantes",
+    description: "Funcionários desse segmento possuem alguns direitos  convencionais, descubra quais são eles.",
     image: "ConvencaoGarcom.jpg",
     url: "/convencao-garcons",
     data: [
       {
         title: "Piso Salarial",
         content:
-          "A convenção define um piso salarial SUPERIOR AO SALÁRIO MÍNIMO NACIONAL, garantindo um salário mais justo para a categoria. O valor específico varia de acordo com a função exercida pelo garçom e seu tempo de serviço. Se o empregado trabalha com garçom em uma das cidades afetadas pela convenção, ele tem direito a receber o piso salarial estabelecido.",
+          "A convenção define um piso salarial SUPERIOR AO SALÁRIO MÍNIMO NACIONAL, garantindo um salário mais justo para a categoria. O valor específico varia de acordo com a função exercida pelo empregado e seu tempo de serviço. É importante ressaltar que o piso salarial será aplicável Apenas se a convenção tiver abrangência na cidade onde o empregado trabalha",
       },
       {
         title: "Hora Extra Convencional",
@@ -65,13 +66,11 @@ const cases = [
           "O garçom que trabalhar em um feriado nacional tem direito a folga compensatória em outro dia. Caso a folga não seja concedida dentro de 90 dias, o feriado trabalhado será pago em dobro. Além disso, o garçom que trabalhar em um feriado tem direito a receber o valor do dia normal de trabalho acrescido de 100%, totalizando o triplo do valor normal da hora.",
       },
       {
-        title: "Onde se aplica essa convenção?",
-        content:
-          "MINAS GERAIS: Barão de Cocais | Belo Horizonte | Betim | Bom Despacho | Carandaí | Conselheiro Lafaiete | Contagem | Itabira | Itabirito | Itaúna | João Monlevade | Lagoa Santa | Nova Era | Nova Lima | Ouro Preto | Pará de Minas | Paraopeba | Pedro Leopoldo | Raposos | Ribeirão das Neves | Sabará | Santa Luzia | Sete Lagoas | Vespasiano",
+        content: "",
       },
       {
         content:
-          "A Convenção dos Garçons se aplica aos trabalhadores da categoria que atuam em bares e restaurantes nas cidades listadas acima. Para verificar se a convenção se aplica à sua cidade, consulte a íntegra da convenção ou entre em contato com o sindicato da sua região",
+          "Os direitos citados acima são apenas exemplificativos. Para verificar qual  convenção se aplica à sua cidade, consulte na íntegra da convenção ou entre em contato com o sindicato da sua categoria.",
       },
     ],
   },
@@ -96,6 +95,25 @@ const cases = [
         title: "Anulação do Pedido de Demissão",
         content:
           "Às vezes, o pedido de demissão de um empregado pode ser anulado, o que significa que ele não vale, quando a pessoa é forçada de alguma forma a pedir demissão. Isso pode acontecer se o empregado se sentir em perigo, se estiver sendo criticado ou pressionado constantemente, se tiver medo, se estiver sendo coagido ou se estiver incapacitado devido a um acidente. Também pode acontecer se o patrão, chefe, encarregado ou outros enganarem o empregado de alguma maneira e conseguirem que o empregado assine um pedido de demissão",
+      },
+    ],
+  },
+  // SALÁRIO POR FORA
+  {
+    title: "Salário por Fora",
+    description: "Gorjetas, comissões e recebimentos extra-folha. Saiba como receber seus direitos.",
+    image: "SalarioPorFora.jpg",
+    url: "/salario-por-fora",
+    data: [
+      {
+        title: "Salário, Comissão e Gorjetas Por Fora",
+        content:
+          "O salário por fora é uma prática ilegal adotada por algumas empresas para pagar seus funcionários sem os encargos trabalhistas, prejudicando o empregado no valor do FGTS, décimo terceiro, horas trabalhadas, horas extras, impostos, contribuições previdenciárias e outros direitos trabalhistas. Geralmente, esse tipo de pagamento é feito de forma extraoficial, sem registro na carteira de trabalho.",
+      },
+      {
+        title: "Consequências do Salário por Fora",
+        content:
+          "É importante destacar que o salário por fora traz consequências negativas ao empregado. Além de não receber os direitos trabalhistas devidos, o trabalhador fica desprotegido em caso de demissão, não tem acesso a benefícios previdenciários e pode enfrentar dificuldades para comprovar sua renda em situações como a solicitação de empréstimos ou financiamentos.",
       },
     ],
   },
@@ -262,25 +280,6 @@ const cases = [
         title: "Comprovação do Vínculo de Emprego",
         content:
           "A subordinação pode ser comprovada com exemplos práticos referentes à rotina de trabalho, como o envio de e-mails, mensagens de WhatsApp, nos quais o empregador exige o cumprimento da jornada de trabalho ou manda o empregado executar determinadas tarefas.",
-      },
-    ],
-  },
-  // SALÁRIO POR FORA
-  {
-    title: "Salário por Fora",
-    description: "Gorjetas, comissões e recebimentos extra-folha. Saiba como receber seus direitos.",
-    image: "SalarioPorFora.jpg",
-    url: "/salario-por-fora",
-    data: [
-      {
-        title: "Salário, Comissão e Gorjetas Por Fora",
-        content:
-          "O salário por fora é uma prática ilegal adotada por algumas empresas para pagar seus funcionários sem os encargos trabalhistas, prejudicando o empregado no valor do FGTS, décimo terceiro, horas trabalhadas, horas extras, impostos, contribuições previdenciárias e outros direitos trabalhistas. Geralmente, esse tipo de pagamento é feito de forma extraoficial, sem registro na carteira de trabalho.",
-      },
-      {
-        title: "Consequências do Salário por Fora",
-        content:
-          "É importante destacar que o salário por fora traz consequências negativas ao empregado. Além de não receber os direitos trabalhistas devidos, o trabalhador fica desprotegido em caso de demissão, não tem acesso a benefícios previdenciários e pode enfrentar dificuldades para comprovar sua renda em situações como a solicitação de empréstimos ou financiamentos.",
       },
     ],
   },

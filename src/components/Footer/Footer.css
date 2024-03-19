@@ -1,10 +1,11 @@
 .Footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1em;
   cursor: pointer;
   border: none;
-  height: 10em;
+  height: auto;
   padding-top: 2em;
   padding-bottom: 3em;
   width: 100%;
@@ -14,8 +15,33 @@
 .footer-line {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  /*QUEBRAR AUTOMATICAMENTE*/
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: 10em;
   margin-right: 10em;
+}
+
+hr {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  margin: 0;
+}
+
+.footer-infos {
+  width: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  #footer-map {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .footer-infos {
+    width: 100%;
+  }
 }
