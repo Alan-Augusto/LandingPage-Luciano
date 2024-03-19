@@ -22,7 +22,7 @@ function Contacts() {
         <Contact title="Instagram" value="@lgladvtrabalhista" color="radial-insta" link="https://www.instagram.com/lucianograciano.adv/" icon={<FaInstagram size={"1.9em"} />} />
         <Contact title="E-mail" value="lucianogracianoadv@gmail.com" color="radial-email" link="mailto:lucianogracianoadv@gmail.com" icon={<MdOutlineEmail size={"1.9em"} />} />
       </div>
-      <p style={{ fontSize: "20px" }}>Atendemos presencialemnte ou online</p>
+      <p style={{ fontSize: "20px" }}>Atendemos presencialmente ou online</p>
     </section>
   );
 }
