@@ -16,7 +16,7 @@ function Footer() {
             <br />
             Telefone: (31) 99146-9620
             <br />
-            Email: lucianoadvtrabalhista@gmail.com
+            Email: lucianogracianoadv@gmail.com
           </p>
         </div>
         <div className="footer-infos">
@@ -46,7 +46,7 @@ function Footer() {
 
       <div className="footer-line">
         <div className="footer-infos">
-          <p>© 2024 - LGL Advocacia Trabalhista. Todos os direitos reservados.</p>
+          <p>© 2024 - Luciano Graciano. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

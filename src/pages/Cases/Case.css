@@ -50,10 +50,39 @@
   font-size: 200%;
   margin-bottom: 2em;
   color: rgb(125, 125, 125);
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 960px) {
   .Case-Data {
     margin: 6vh 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .Case-cover-text {
+    margin-top: 2vh;
+  }
+  .Case-cover {
+    height: 23vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .Case-cover-text {
+    margin-top: 3vh;
+  }
+  .Case-cover {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .Case-cover-text h1 {
+    font-size: 150%;
+  }
+  .Case-cover {
+    height: 30vh;
   }
 }
