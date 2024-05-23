@@ -16,6 +16,11 @@ function YourCases(){
 
     const responsiveOptions = [
         {
+            breakpoint: '1800px',
+            numVisible: 5,
+            numScroll: 2
+        },
+        {
             breakpoint: '1400px',
             numVisible: 4,
             numScroll: 2

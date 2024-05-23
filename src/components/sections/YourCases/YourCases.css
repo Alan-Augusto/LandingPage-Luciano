@@ -17,6 +17,7 @@
 
 .carousel-container{
     display: flex;
+    margin-left: 2rem;
     flex-direction: column;
     gap: 8px;
     align-items: center;
